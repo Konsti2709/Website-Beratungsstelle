@@ -2,7 +2,12 @@
     --bg-dark: #2A2421;
     --text-light: #FFFFFF;
     --accent-color: #D4B295;
-    --font-main: 'Segoe UI', Arial, sans-serif;
+    --font-main: "Nunito Sans", Arial, sans-serif;
+
+    --radius: 10px;
+    --shadow: 0 8px 20px rgba(0, 0, 0, .15);
+    --transition: .3s ease;
+    --container-width: 1200px;
 }
 
 * {
@@ -13,6 +18,13 @@
 
 body {
     font-family: var(--font-main);
-    background-color: #FDFBF9;
-    color: #333333;
+    background: #FDFBF9;
+    color: #333;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

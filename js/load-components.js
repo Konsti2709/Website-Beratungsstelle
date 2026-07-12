@@ -3,5 +3,6 @@ fetch("components/header.html")
     .then(data => {
         document.body.insertAdjacentHTML("afterbegin", data);
 
-        initHeader();
+        if (typeof initHeader === "function") initHeader();
+        if (typeof initFAQ === "function") initFAQ();
     });

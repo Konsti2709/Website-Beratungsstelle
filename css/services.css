@@ -1,0 +1,143 @@
+.services-section {
+    padding: 80px 20px;
+    background: #FDFBF9;
+}
+
+
+.services-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.services-container h2 {
+    color: var(--bg-dark);
+
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.services-intro {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    color: var(--bg-dark);
+
+    line-height: 1.7;
+}
+
+
+/* Karten */
+
+.services-grid {
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+}
+
+
+
+.service-card {
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    text-align: left;
+
+    transition: var(--transition);
+}
+
+
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.service-card img {
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+
+.service-content {
+
+    padding: 25px;
+}
+
+
+
+.service-content h3 {
+
+    color: var(--bg-dark);
+
+    font-size: 1.3rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.service-content p {
+
+    color: #444;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.service-content .btn {
+
+    display: inline-block;
+}
+
+
+
+@media (min-width: 1024px) {
+
+
+    .services-section {
+        padding: 100px 20px;
+    }
+
+
+
+    .services-container h2 {
+
+        font-size: 2.8rem;
+
+    }
+
+
+
+    .services-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 30px;
+
+    }
+
+}
