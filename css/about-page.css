@@ -1,0 +1,240 @@
+/* Hero */
+
+.about-hero {
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #fdf8f3, #f4e7db);
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp .8s ease forwards;
+}
+
+.about-hero h1 {
+    margin-bottom: 20px;
+    color: var(--bg-dark);
+    font-size: 2.3rem;
+}
+
+.about-hero p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* Allgemein */
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-introduction,
+.about-values,
+.about-target,
+.about-school,
+.about-qualification,
+.about-quote,
+.about-cta {
+    padding: 80px 20px;
+}
+
+.about-container h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--bg-dark);
+}
+
+
+/* Vorstellung */
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-image img,
+.about-school-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.about-text p,
+.about-school p {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* Beratungsansatz */
+
+.about-values {
+    background: #fdf8f3;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.about-card {
+    padding: 30px 25px;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3 {
+    margin-bottom: 15px;
+    color: var(--bg-dark);
+}
+
+.about-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Schulberatung */
+
+.about-school {
+    background: white;
+}
+
+
+/* Qualifikationen */
+
+.qualification-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.qualification-grid > div {
+    padding: 30px;
+    background: #fdf8f3;
+    border-radius: var(--radius);
+}
+
+.qualification-grid h3 {
+    margin-bottom: 20px;
+    color: var(--bg-dark);
+}
+
+.qualification-grid ul {
+    padding-left: 20px;
+}
+
+.qualification-grid li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+/* Zitat */
+
+.about-quote {
+    background: #fdf8f3;
+    text-align: center;
+}
+
+.about-quote blockquote {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    color: var(--bg-dark);
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.about-quote p {
+    color: #555;
+}
+
+
+/* CTA */
+
+.about-cta {
+    background: var(--bg-dark);
+    text-align: center;
+}
+
+.about-cta h2 {
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+.about-cta .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.about-cta .btn-primary {
+    background: var(--accent-color);
+    color: var(--bg-dark);
+}
+
+.about-cta .btn-primary:hover {
+    transform: translateY(-2px);
+    filter: brightness(.95);
+}
+
+
+/* Animation */
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Desktop */
+
+@media (min-width:1024px) {
+
+    .about-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+    }
+
+    .about-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-target .about-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .qualification-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-quote blockquote {
+        font-size: 2rem;
+    }
+
+}
