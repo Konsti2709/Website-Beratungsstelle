@@ -1,20 +1,18 @@
 .about-section {
     padding: 80px 20px;
-    background: #F8F3EE;
+    background: var(--color-background);
 }
 
 .about-container {
     max-width: var(--container-width);
     margin: 0 auto;
-
     display: flex;
     flex-direction: column-reverse;
-
     gap: 40px;
 }
 
 .about-content {
-    color: var(--bg-dark);
+    color: var(--color-dark);
 }
 
 .about-content h2 {
@@ -39,7 +37,7 @@
     object-fit: cover;
 }
 
-@media (min-width: 1024px) {
+@media (min-width:1024px) {
     .about-section {
         padding: 100px 20px;
     }

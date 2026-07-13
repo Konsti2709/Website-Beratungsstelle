@@ -1,0 +1,2744 @@
+
+============================================================
+DATEI: index.html
+============================================================
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Aufwind Beratung</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/process.css">
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Gemeinsam neue Perspektiven entwickeln.</h1>
+
+            <p>
+                Willkommen bei Aufwind Beratung. Ich unterstütze Sie und Ihre Familie
+                dabei, neue Perspektiven zu entwickeln und Herausforderungen
+                erfolgreich zu meistern – persönlich in Wiesbaden oder online.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">Termin vereinbaren</a>
+                <a href="services.html" class="btn btn-secondary">Mehr erfahren</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-section">
+
+        <div class="services-container">
+
+            <h2>Gemeinsam neue Wege entdecken</h2>
+
+            <p class="services-intro">
+                Jeder Mensch steht vor individuellen Herausforderungen.
+                Gemeinsam entwickeln wir neue Perspektiven und finden Wege,
+                die zu Ihrer persönlichen Situation passen.
+            </p>
+
+
+            <div class="services-grid">
+
+
+                <article class="service-card">
+
+                    <img src="images/angebot-familie.jpg" 
+                        alt="Familienberatung">
+
+                    <div class="service-content">
+
+                        <h3>Familienberatung</h3>
+
+                        <p>
+                            Unterstützung bei schulischen Herausforderungen
+                            und familiären Belastungen. Gemeinsam betrachten
+                            wir Zusammenhänge und entwickeln neue Möglichkeiten.
+                        </p>
+
+                        <a href="services.html" class="btn btn-primary">
+                            Mehr erfahren
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <img src="images/angebot-frauen.jpg" 
+                        alt="Beratung für Frauen">
+
+                    <div class="service-content">
+
+                        <h3>Beratung für Frauen</h3>
+
+                        <p>
+                            Unterstützung bei persönlichen Herausforderungen
+                            und der Entwicklung neuer Lebensperspektiven.
+                        </p>
+
+                        <a href="services.html" class="btn btn-primary">
+                            Mehr erfahren
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <img src="images/angebot-online.jpg" 
+                        alt="Online-Beratung">
+
+                    <div class="service-content">
+
+                        <h3>Online-Beratung</h3>
+
+                        <p>
+                            Flexible Beratung von zu Hause aus –
+                            einfach, vertraulich und ortsunabhängig.
+                        </p>
+
+                        <a href="services.html" class="btn btn-primary">
+                            Mehr erfahren
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="about-section">
+
+        <div class="about-container">
+
+            <div class="about-content">
+
+                <h2>Über Aufwind Beratung</h2>
+
+                <p>
+                    Willkommen bei Aufwind Beratung. Mein Name ist [Name] und ich
+                    begleite Kinder, Jugendliche und Erwachsene sowie Familien dabei,
+                    neue Perspektiven zu entwickeln und eigene Wege zu finden.
+                </p>
+
+                <p>
+                    Mir ist wichtig, einen vertrauensvollen und wertschätzenden Raum
+                    zu schaffen, in dem Sie sich wohlfühlen und Ihre Themen in Ihrem
+                    eigenen Tempo betrachten können. Gemeinsam entdecken wir Ressourcen,
+                    lösen Blockaden und entwickeln neue Möglichkeiten für nachhaltige
+                    Veränderungen.
+                </p>
+
+                <a href="about.html" class="btn btn-primary">
+                    Mehr über mich
+                </a>
+
+            </div>
+
+
+            <div class="about-image">
+
+                <img src="images/about.jpg" 
+                    alt="Aufwind Beratung">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="process-section">
+
+        <div class="process-container">
+
+            <h2>So läuft eine Beratung ab</h2>
+
+            <p class="process-intro">
+                Der erste Schritt ist oft der schwerste. Ich begleite Sie Schritt
+                für Schritt – vom ersten Kennenlernen bis zur Entwicklung neuer
+                Perspektiven.
+            </p>
+
+            <div class="process-grid">
+
+                <article class="process-step">
+                    <div class="step-number">1</div>
+
+                    <h3>Erstkontakt</h3>
+
+                    <p>
+                        Kurzes Kennenlernen und Terminvereinbarung.
+                    </p>
+                </article>
+
+
+                <article class="process-step">
+                    <div class="step-number">2</div>
+
+                    <h3>Persönliches Gespräch</h3>
+
+                    <p>
+                        Gemeinsam besprechen wir Ihre Situation, Wünsche und Ziele.
+                    </p>
+                </article>
+
+
+                <article class="process-step">
+                    <div class="step-number">3</div>
+
+                    <h3>Gemeinsame Lösungen</h3>
+
+                    <p>
+                        Gemeinsam entwickeln wir neue Perspektiven und individuelle
+                        Handlungsmöglichkeiten.
+                    </p>
+                </article>
+
+
+                <article class="process-step">
+                    <div class="step-number">4</div>
+
+                    <h3>Nachhaltige Begleitung</h3>
+
+                    <p>
+                        Ich begleite Sie dabei, neue Wege Schritt für Schritt in
+                        Ihren Alltag zu integrieren.
+                    </p>
+                </article>
+
+            </div>
+
+            <p class="process-ending">
+                Ich freue mich darauf, Sie auf Ihrem Weg zu begleiten.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary">
+                Jetzt Termin vereinbaren
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="faq-section">
+
+        <div class="faq-container">
+
+            <h2>Häufige Fragen</h2>
+
+            <p class="faq-intro">
+                Hier finden Sie Antworten auf Fragen, die mir häufig gestellt werden.
+            </p>
+
+            <div class="faq">
+
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false">
+                        Wie läuft eine Beratung ab?
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Nach einem ersten Kennenlernen besprechen wir Ihre Anliegen und Ziele.
+                            Gemeinsam entwickeln wir passende Lösungsansätze und arbeiten Schritt
+                            für Schritt an den Themen, die Ihnen wichtig sind.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false">
+                        Wie lange dauert eine Sitzung?
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Eine Beratung dauert in der Regel etwa 60 Minuten.
+                            Die genaue Dauer kann je nach Anliegen individuell vereinbart werden.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false">
+                        Wo findet die Beratung statt?
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Die Beratung findet persönlich in Wiesbaden oder bequem online statt –
+                            ganz so, wie es am besten zu Ihrer Situation passt.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false">
+                        Was kostet eine Beratung?
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Alle Informationen zu den Kosten finden Sie auf der Seite
+                            „Kosten & Terminbuchung“. Gerne beantworte ich Ihre Fragen auch persönlich.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false">
+                        Werden meine Gespräche vertraulich behandelt?
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Ja. Vertraulichkeit ist eine wichtige Grundlage meiner Arbeit.
+                            Alle Gespräche werden selbstverständlich vertraulich behandelt.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false">
+                        Wie kann ich einen Termin vereinbaren?
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Sie können mich ganz einfach per E-Mail oder telefonisch kontaktieren
+                            oder über die Terminseite eine Anfrage stellen.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-cta">
+
+                <h3>Ich freue mich darauf, Sie kennenzulernen.</h3>
+
+                <p>
+                    Haben Sie noch Fragen oder möchten einen Termin vereinbaren?
+                    Ich freue mich auf Ihre Nachricht.
+                </p>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Termin vereinbaren
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/header.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/load-components.js"></script>
+
+</body>
+</html>
+
+
+============================================================
+DATEI: about.html
+============================================================
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Über mich | Aufwind Beratung</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about-page.css">
+</head>
+
+<body>
+
+    <main>
+
+
+        <section class="about-hero">
+
+            <div class="about-hero-content">
+
+                <h1>
+                    Willkommen bei Aufwind.
+                </h1>
+
+                <p>
+                    Hier beginnt Ihre Reise zu mehr Leichtigkeit,
+                    Klarheit und neuer Lebensqualität.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="about-introduction">
+
+            <div class="about-container about-grid">
+
+
+                <div class="about-image">
+
+                    <img src="images/portrait.jpg" alt="Portrait">
+
+                </div>
+
+
+
+                <div class="about-text">
+
+                    <h2>
+                        Wer ich bin
+                    </h2>
+
+
+                    <p>
+                        Manchmal geraten wir im Leben an einen Punkt,
+                        an dem alles zu viel wird, Entscheidungen schwerfallen
+                        oder Krisen den Blick auf die eigenen Stärken verdecken.
+                        Genau dort müssen Sie nicht allein hindurch.
+                    </p>
+
+
+                    <p>
+                        Ich begleite Menschen mit Wertschätzung, Offenheit
+                        und einem Blick auf ihre individuellen Ressourcen.
+                        Gemeinsam schaffen wir Raum, Belastendes zu sortieren,
+                        neue Perspektiven zu entdecken und Wege zu finden,
+                        die zu Ihnen und Ihrer Lebenssituation passen.
+                    </p>
+
+
+                    <p>
+                        Vertrauen, Empathie und Respekt bilden die Grundlage
+                        meiner Arbeit.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="about-values">
+
+            <div class="about-container">
+
+
+                <h2>
+                    Mein Beratungsansatz
+                </h2>
+
+
+                <div class="about-cards">
+
+
+                    <div class="about-card">
+
+                        <h3>
+                            🤝 Wertschätzend
+                        </h3>
+
+                        <p>
+                            Ich begegne jedem Menschen mit Offenheit,
+                            Respekt und einem geschützten Raum für persönliche Anliegen.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="about-card">
+
+                        <h3>
+                            🌱 Lösungsorientiert
+                        </h3>
+
+                        <p>
+                            Gemeinsam entdecken wir vorhandene Ressourcen
+                            und entwickeln neue Perspektiven.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="about-card">
+
+                        <h3>
+                            💬 Individuell
+                        </h3>
+
+                        <p>
+                            Jede Beratung richtet sich nach Ihrer persönlichen
+                            Situation und Ihrem eigenen Tempo.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="about-target">
+
+            <div class="about-container">
+
+
+                <h2>
+                    Für wen ich da bin
+                </h2>
+
+
+                <div class="about-cards">
+
+
+                    <div class="about-card">
+
+                        <h3>
+                            👩 Frauen
+                        </h3>
+
+                        <p>
+                            Begleitung bei persönlichen Krisen,
+                            belastenden Lebensphasen und Entscheidungen.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="about-card">
+
+                        <h3>
+                            👨‍👩‍👧 Familien
+                        </h3>
+
+                        <p>
+                            Unterstützung bei familiären Veränderungen
+                            und schulischen Herausforderungen.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="about-card">
+
+                        <h3>
+                            🎓 Schule
+                        </h3>
+
+                        <p>
+                            Beratung bei Lernproblemen,
+                            Konflikten und Übergängen.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="about-card">
+
+                        <h3>
+                            💻 Online-Beratung
+                        </h3>
+
+                        <p>
+                            Flexibel, ortsunabhängig und vertraulich.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="about-school">
+
+            <div class="about-container about-grid">
+
+
+                <div class="about-school-image">
+
+                    <img src="images/beratung.jpg" alt="Beratung">
+
+                </div>
+
+
+
+                <div>
+
+                    <h2>
+                        Schulische Herausforderungen gemeinsam meistern
+                    </h2>
+
+
+                    <p>
+                        Schule ist ein wichtiger Lebensbereich und kann Kinder,
+                        Jugendliche und Familien gleichzeitig vor große Herausforderungen
+                        stellen.
+                    </p>
+
+
+                    <p>
+                        In der Beratung erhalten Familien einen geschützten Raum,
+                        um Belastungen zu besprechen, Zusammenhänge zu verstehen
+                        und neue Handlungsmöglichkeiten zu entdecken.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="about-qualification">
+
+            <div class="about-container">
+
+
+                <h2>
+                    Qualifikationen & Erfahrung
+                </h2>
+
+
+                <div class="qualification-grid">
+
+
+                    <div>
+
+                        <h3>
+                            🎓 Ausbildung
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Lehramtsstudium
+                            </li>
+
+                            <li>
+                                Erste Staatsprüfung 2002
+                            </li>
+
+                            <li>
+                                Zweite Staatsprüfung 2004
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <h3>
+                            💼 Berufserfahrung
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Lehrerin an verschiedenen Grundschulen
+                            </li>
+
+                            <li>
+                                Mentorin für Praktikanten und Referendare
+                            </li>
+
+                            <li>
+                                Ausbildungsbeauftragte
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <h3>
+                            📜 Beratung
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Psychologische Beratung
+                            </li>
+
+                            <li>
+                                Systemische Beratung
+                            </li>
+
+                            <li>
+                                Staatliche Zulassung
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="about-quote">
+
+            <div class="about-container">
+
+
+                <blockquote>
+                    „Aufwind entsteht, wenn Menschen ihre eigenen Stärken wiederentdecken
+                    und den Mut finden, neue Wege zu gehen.“
+                </blockquote>
+
+
+                <p>
+                    Dieser Leitsatz beschreibt meine Haltung als Beraterin.
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="about-cta">
+
+
+            <h2>
+                Ich freue mich darauf, Sie ein Stück Ihres Weges zu begleiten.
+            </h2>
+
+
+            <a href="contact.html" class="btn btn-primary">
+                Kontakt aufnehmen
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/header.js"></script>
+    <script src="js/load-components.js"></script>
+
+</body>
+
+</html>
+
+
+============================================================
+DATEI: services.html
+============================================================
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Aufwind Beratung</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/services-page.css">
+</head>
+
+<body>
+
+<main>
+
+    <section class="services-hero">
+
+        <div class="services-hero-content">
+
+            <h1>
+                Beratung, die zu Ihrer Situation passt
+            </h1>
+
+            <p>
+                Gemeinsam entwickeln wir neue Perspektiven,
+                entdecken Ihre Ressourcen und finden Wege,
+                die zu Ihnen und Ihrem Leben passen.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="services-overview">
+
+        <div class="services-container">
+
+            <h2>
+                Meine Beratungsangebote
+            </h2>
+
+
+            <div class="services-cards">
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        🌱
+                    </div>
+
+                    <h3>
+                        Psychologische Beratung
+                    </h3>
+
+                    <p>
+                        Unterstützung bei persönlichen Krisen,
+                        belastenden Lebensphasen, Überforderung,
+                        Stress und wichtigen Entscheidungen.
+                    </p>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        🔎
+                    </div>
+
+                    <h3>
+                        Systemische Beratung
+                    </h3>
+
+                    <p>
+                        Gemeinsam betrachten wir Zusammenhänge,
+                        Beziehungen und Ressourcen, um neue
+                        Perspektiven und Lösungen zu entwickeln.
+                    </p>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        🤝
+                    </div>
+
+                    <h3>
+                        Familienberatung
+                    </h3>
+
+                    <p>
+                        Unterstützung bei familiären Konflikten,
+                        Veränderungen und Herausforderungen
+                        im Zusammenleben.
+                    </p>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        📚
+                    </div>
+
+                    <h3>
+                        Schulische Herausforderungen
+                    </h3>
+
+                    <p>
+                        Beratung für Familien bei Lernproblemen,
+                        Motivation, Konflikten und schwierigen
+                        Übergängen im Schulalltag.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="services-process">
+
+        <div class="services-container">
+
+            <h2>
+                So läuft eine Beratung ab
+            </h2>
+
+
+            <div class="services-steps">
+
+                <div class="services-step">
+                    <span>1</span>
+                    <h3>Kontakt aufnehmen</h3>
+                    <p>
+                        Sie schildern Ihr Anliegen und wir
+                        vereinbaren ein erstes Gespräch.
+                    </p>
+                </div>
+
+                <div class="services-arrow">
+                    →
+                </div>
+
+                <div class="services-step">
+                    <span>2</span>
+                    <h3>Erstgespräch</h3>
+                    <p>
+                        Gemeinsam schauen wir auf Ihre Situation
+                        und mögliche nächste Schritte.
+                    </p>
+                </div>
+
+                <div class="services-arrow">
+                    →
+                </div>
+
+                <div class="services-step">
+                    <span>3</span>
+                    <h3>Gemeinsam weitergehen</h3>
+                    <p>
+                        Wir entwickeln Lösungen, die zu Ihnen
+                        und Ihrer Lebenssituation passen.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="services-suitable">
+
+        <div class="services-container">
+
+            <h2>
+                Für wen ist die Beratung geeignet?
+            </h2>
+
+
+            <p>
+                Die Beratung richtet sich an Menschen,
+                die sich Unterstützung wünschen, neue
+                Perspektiven suchen oder schwierige
+                Situationen besser verstehen möchten.
+            </p>
+
+
+            <ul>
+
+                <li>
+                    Persönliche Krisen und Veränderungen
+                </li>
+
+                <li>
+                    Überforderung und anhaltender Stress
+                </li>
+
+                <li>
+                    Familien- und Beziehungskonflikte
+                </li>
+
+                <li>
+                    Schulische Herausforderungen
+                </li>
+
+                <li>
+                    Entscheidungen und neue Lebenswege
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="services-cta">
+
+        <div class="services-container">
+
+            <h2>
+                Sie möchten mehr erfahren?
+            </h2>
+
+
+            <a href="contact.html" class="btn btn-primary">
+                Kontakt aufnehmen
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/header.js"></script>
+<script src="js/load-components.js"></script>
+
+</body>
+</html>
+
+
+============================================================
+DATEI: components/header.html
+============================================================
+
+<header class="main-header">
+	<div class="header-container">
+		<div class="logo">
+			<h1>Aufwind Beratung</h1>
+		</div>
+		
+		<button class="menu-toggle" aria-label="Menü öffnen">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<nav class="navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Beratungsangebote</a></li>
+				<li><a href="about.html">Über mich</a></li>
+				<li><a href="faq.html">Häufige Fragen</a></li>
+				<li><a href="contact.html">Kosten & Terminbuchung</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+
+============================================================
+DATEI: components/footer.html
+============================================================
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>Aufwind Beratung</h2>
+
+            <p>
+                Psychologische und systemische Beratung in Wiesbaden.
+            </p>
+
+        </div>
+
+
+        <div class="footer-navigation">
+
+            <h3>Navigation</h3>
+
+            <ul>
+                <li>
+                    <a href="index.html">Start</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Angebote</a>
+                </li>
+
+                <li>
+                    <a href="about.html">Über mich</a>
+                </li>
+
+                <li>
+                    <a href="faq.html">Häufige Fragen</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h3>Kontakt</h3>
+
+            <p>
+                <a href="mailto:kontakt@aufwind-beratung.de">
+                    kontakt@aufwind-beratung.de
+                </a>
+            </p>
+
+            <p>
+                Wiesbaden<br>
+                Beratung vor Ort oder online
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Aufwind Beratung
+        </p>
+
+
+        <div class="footer-legal">
+
+            <a href="impressum.html">
+                Impressum
+            </a>
+
+            <a href="datenschutz.html">
+                Datenschutz
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+============================================================
+DATEI: css/about.css
+============================================================
+
+.about-section {
+    padding: 80px 20px;
+    background: var(--color-background);
+}
+
+.about-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+}
+
+.about-content {
+    color: var(--color-dark);
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.about-content .btn {
+    margin-top: 10px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+}
+
+@media (min-width:1024px) {
+    .about-section {
+        padding: 100px 20px;
+    }
+
+    .about-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .about-content {
+        width: 60%;
+    }
+
+    .about-image {
+        width: 40%;
+    }
+
+    .about-content h2 {
+        font-size: 2.8rem;
+    }
+}
+
+
+============================================================
+DATEI: css/about-page.css
+============================================================
+
+.about-hero {
+    padding: 90px 20px;
+    background: linear-gradient(135deg,var(--color-background),#F4E7DB);
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp .8s ease forwards;
+}
+
+.about-hero h1 {
+    margin-bottom: 20px;
+    color: var(--color-dark);
+    font-size: 2.3rem;
+}
+
+.about-hero p {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.about-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.about-introduction,
+.about-values,
+.about-target,
+.about-school,
+.about-qualification,
+.about-quote,
+.about-cta {
+    padding: 80px 20px;
+}
+
+.about-container h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-image img,
+.about-school-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.about-text p,
+.about-school p {
+    margin-bottom: 20px;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.about-values {
+    background: var(--color-background);
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.about-card {
+    padding: 30px 25px;
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3 {
+    margin-bottom: 15px;
+    color: var(--color-dark);
+}
+
+.about-card p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.about-school {
+    background: var(--color-surface);
+}
+
+.qualification-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.qualification-grid > div {
+    padding: 30px;
+    background: var(--color-background);
+    border-radius: var(--radius);
+}
+
+.qualification-grid h3 {
+    margin-bottom: 20px;
+    color: var(--color-dark);
+}
+
+.qualification-grid ul {
+    padding-left: 20px;
+}
+
+.qualification-grid li {
+    margin-bottom: 10px;
+    color: var(--color-text-muted);
+}
+
+.about-quote {
+    background: var(--color-background);
+    text-align: center;
+}
+
+.about-quote blockquote {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.about-quote p {
+    color: var(--color-text-muted);
+}
+
+.about-cta {
+    background: var(--color-dark);
+    text-align: center;
+}
+
+.about-cta h2 {
+    margin-bottom: 30px;
+    color: var(--color-text-light);
+}
+
+.about-cta .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.about-cta .btn-primary {
+    background: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.about-cta .btn-primary:hover {
+    transform: translateY(-2px);
+    filter: brightness(.95);
+}
+
+@media (min-width:1024px) {
+    .about-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns:40% 60%;
+        align-items:center;
+    }
+
+    .about-cards {
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .about-target .about-cards {
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .qualification-grid {
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .about-quote blockquote {
+        font-size:2rem;
+    }
+}
+
+
+============================================================
+DATEI: css/faq.css
+============================================================
+
+.faq-section {
+    padding: 80px 20px;
+    background: var(--color-surface);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-container h2 {
+    text-align: center;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.faq-intro {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 50px;
+    color: var(--color-text-muted);
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--color-border);
+    transition: var(--transition);
+}
+
+.faq-item:first-child {
+    border-top: 1px solid var(--color-border);
+}
+
+.faq-item.is-open {
+    background: var(--color-primary-soft);
+    box-shadow: inset 4px 0 0 var(--color-primary);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 24px 20px;
+
+    display: flex;
+    align-items: center;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+
+    color: var(--color-dark);
+
+    text-align: left;
+
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background: var(--color-primary-soft);
+}
+
+.faq-question::before {
+    content: "▸";
+    margin-right: 18px;
+    color: var(--color-primary);
+    transition: transform .3s;
+}
+
+.faq-item.is-open .faq-question::before {
+    transform: rotate(90deg);
+}
+
+.faq-item.is-open .faq-question {
+    color: var(--color-primary);
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    opacity: 0;
+
+    padding: 0 20px 0 58px;
+
+    transition:
+        grid-template-rows .35s ease,
+        opacity .35s ease,
+        padding .35s ease;
+}
+
+.faq-answer p {
+    overflow: hidden;
+    margin: 0;
+}
+
+.faq-item.is-open .faq-answer {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    padding-bottom: 25px;
+}
+
+.faq-cta {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.faq-cta h3 {
+    color: var(--color-dark);
+    margin-bottom: 15px;
+}
+
+.faq-cta p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+@media (min-width:1024px) {
+    .faq-section {
+        padding: 100px 20px;
+    }
+
+    .faq-container h2 {
+        font-size: 2.8rem;
+    }
+}
+
+
+============================================================
+DATEI: css/faq-page.css
+============================================================
+
+.faq-hero {
+    padding: 90px 20px;
+    background: linear-gradient(135deg,var(--color-background),#F4E7DB);
+    text-align: center;
+}
+
+.faq-hero-content {
+    max-width:800px;
+    margin:0 auto;
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeUp .8s ease forwards;
+}
+
+.faq-hero h1 {
+    margin-bottom:20px;
+    color:var(--color-dark);
+    font-size:2.3rem;
+}
+
+.faq-hero p {
+    color:var(--color-text-muted);
+    line-height:1.7;
+}
+
+.faq-container {
+    max-width:900px;
+    margin:0 auto;
+}
+
+.faq-section,
+.faq-cta {
+    padding:80px 20px;
+}
+
+.faq-container h2 {
+    margin-bottom:40px;
+    text-align:center;
+    color:var(--color-dark);
+}
+
+.faq-list {
+    display:flex;
+    flex-direction:column;
+}
+
+.faq-item {
+    border-bottom:1px solid var(--color-border);
+    transition:var(--transition);
+}
+
+.faq-item:first-child {
+    border-top:1px solid var(--color-border);
+}
+
+.faq-item.is-open {
+    background:var(--color-primary-soft);
+    box-shadow:inset 4px 0 0 var(--color-primary);
+}
+
+.faq-question {
+    width:100%;
+    padding:24px 20px;
+
+    display:flex;
+    align-items:center;
+
+    border:none;
+    background:transparent;
+
+    cursor:pointer;
+
+    font-family:inherit;
+    font-size:1.05rem;
+    font-weight:600;
+
+    color:var(--color-dark);
+
+    text-align:left;
+
+    transition:var(--transition);
+}
+
+.faq-question:hover {
+    background:var(--color-primary-soft);
+}
+
+.faq-question::before {
+    content:"▸";
+    margin-right:18px;
+    color:var(--color-primary);
+    transition:transform .3s;
+}
+
+.faq-item.is-open .faq-question::before {
+    transform:rotate(90deg);
+}
+
+.faq-item.is-open .faq-question {
+    color:var(--color-primary);
+}
+
+.faq-answer {
+    display:grid;
+    grid-template-rows:0fr;
+
+    opacity:0;
+
+    padding:0 20px 0 58px;
+
+    transition:
+        grid-template-rows .35s ease,
+        opacity .35s ease,
+        padding .35s ease;
+}
+
+.faq-answer p {
+    overflow:hidden;
+    margin:0;
+    color:var(--color-text-muted);
+    line-height:1.7;
+}
+
+.faq-item.is-open .faq-answer {
+    grid-template-rows:1fr;
+    opacity:1;
+    padding-bottom:25px;
+}
+
+.faq-cta {
+    background:var(--color-dark);
+    text-align:center;
+}
+
+.faq-cta h2 {
+    color:var(--color-text-light);
+}
+
+.faq-cta p {
+    max-width:700px;
+    margin:0 auto 35px;
+    color:var(--color-text-light);
+    line-height:1.7;
+}
+
+.faq-cta .btn {
+    display:inline-block;
+    padding:14px 28px;
+    background:var(--color-primary);
+    color:var(--color-dark);
+    border-radius:var(--radius);
+    text-decoration:none;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.faq-cta .btn:hover {
+    transform:translateY(-2px);
+    filter:brightness(.95);
+}
+
+@media(min-width:1024px) {
+    .faq-hero h1 {
+        font-size:3.5rem;
+    }
+
+    .faq-section {
+        padding:100px 20px;
+    }
+}
+
+
+============================================================
+DATEI: css/footer.css
+============================================================
+
+.footer {
+    background: var(--color-dark);
+    color: var(--color-text-light);
+    padding: 60px 20px 25px;
+}
+
+.footer-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer h2,
+.footer h3 {
+    color: var(--color-primary);
+}
+
+.footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    line-height: 1.7;
+    opacity: .9;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--color-primary);
+}
+
+.footer-navigation a:hover {
+    transform: translateX(3px);
+}
+
+.footer-bottom {
+    max-width: var(--container-width);
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 20px;
+}
+
+@media (min-width:1024px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-brand {
+        max-width: 300px;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+
+============================================================
+DATEI: css/global.css
+============================================================
+
+:root {
+    --color-primary: #D4B295;
+    --color-dark: #2A2421;
+
+    --color-background: #FDFBF9;
+    --color-surface: #FFFFFF;
+
+    --color-text: #333333;
+    --color-text-light: #FFFFFF;
+    --color-text-muted: #666666;
+
+    --color-border: #DDDDDD;
+    --color-primary-soft: rgba(212,178,149,.08);
+
+    --font-main: "Nunito Sans", Arial, sans-serif;
+
+    --container-width: 1200px;
+
+    --radius: 10px;
+    --shadow: 0 8px 20px rgba(0,0,0,.15);
+
+    --transition: .3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+============================================================
+DATEI: css/header.css
+============================================================
+
+.main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--color-dark);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    min-inline-size: 250px;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background: var(--color-primary);
+    transition: var(--transition);
+}
+
+.navigation {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    max-width: 100vw;
+    background: var(--color-dark);
+    border-radius: 0 0 var(--radius) var(--radius);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--transition);
+}
+
+.navigation.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+.navigation a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-text-light);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.navigation a:is(:hover, .active) {
+    color: var(--color-dark);
+    background: var(--color-primary);
+}
+
+@media (min-width:1024px) {
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation {
+        position: static;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        gap: 20px;
+        padding: 0;
+        align-items: center;
+    }
+
+    .navigation a {
+        width: auto;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+
+============================================================
+DATEI: css/hero.css
+============================================================
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 70vh;
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(253,251,249,.75),
+            rgba(212,178,149,.45)
+        ),
+        url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation: fadeUp .8s ease forwards;
+}
+
+.hero h1 {
+    margin-bottom: 40px;
+    color: var(--color-dark);
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin-bottom: 35px;
+    color: var(--color-dark);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    filter: brightness(.95);
+}
+
+.btn-secondary {
+    background: rgba(255,255,255,.45);
+    border: 2px solid var(--color-dark);
+    color: var(--color-dark);
+}
+
+.btn-secondary:hover {
+    background: var(--color-dark);
+    color: var(--color-text-light);
+}
+
+@media (min-width:1024px) {
+    .hero {
+        min-height: 80vh;
+        padding: 140px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+============================================================
+DATEI: css/process.css
+============================================================
+
+.process-section {
+    padding: 80px 20px;
+    background: var(--color-surface);
+}
+
+.process-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.process-container h2 {
+    color: var(--color-dark);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.process-intro {
+    max-width: 650px;
+    margin: 0 auto 60px;
+    line-height: 1.7;
+    color: var(--color-dark);
+}
+
+.process-grid {
+    display: grid;
+    gap: 45px;
+}
+
+.process-step {
+    position: relative;
+}
+
+.process-step:not(:last-child)::after {
+    content: "↓";
+    display: block;
+    margin-top: 35px;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: var(--color-primary);
+    color: var(--color-dark);
+
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    transition: transform .3s;
+}
+
+.process-step:hover .step-number {
+    transform: scale(1.08);
+}
+
+.process-step h3 {
+    margin-bottom: 15px;
+    color: var(--color-dark);
+}
+
+.process-step p {
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+.process-ending {
+    margin: 70px auto 30px;
+    max-width: 600px;
+    line-height: 1.7;
+    color: var(--color-dark);
+}
+
+.process-container .btn {
+    display: inline-block;
+}
+
+@media (min-width:1024px) {
+    .process-section {
+        padding: 100px 20px;
+    }
+
+    .process-container h2 {
+        font-size: 2.8rem;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+    }
+
+    .process-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .process-step:not(:last-child)::after {
+        content: "→";
+        position: absolute;
+        top: 30px;
+        right: -18px;
+        margin: 0;
+        font-size: 1.5rem;
+        color: var(--color-primary);
+    }
+}
+
+
+============================================================
+DATEI: css/services.css
+============================================================
+
+.services-section {
+    padding: 80px 20px;
+    background: var(--color-background);
+}
+
+.services-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-container h2 {
+    color: var(--color-dark);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: var(--color-dark);
+    line-height: 1.7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.service-card {
+    overflow: hidden;
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: left;
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 25px;
+}
+
+.service-content h3 {
+    color: var(--color-dark);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.service-content .btn {
+    display: inline-block;
+}
+
+@media (min-width:1024px) {
+    .services-section {
+        padding: 100px 20px;
+    }
+
+    .services-container h2 {
+        font-size: 2.8rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+}
+
+
+============================================================
+DATEI: css/services-page.css
+============================================================
+
+/* Hero */
+
+.services-hero {
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #fdf8f3, #f4e7db);
+    text-align: center;
+}
+
+.services-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp .8s ease forwards;
+}
+
+.services-hero h1 {
+    margin-bottom: 20px;
+    color: var(--bg-dark);
+    font-size: 2.3rem;
+}
+
+.services-hero p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* Allgemein */
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-overview,
+.services-process,
+.services-suitable,
+.services-cta {
+    padding: 80px 20px;
+}
+
+.services-container h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--bg-dark);
+}
+
+
+/* Angebote */
+
+.services-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.service-card {
+    padding: 35px 25px;
+    background: #fdf8f3;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: var(--bg-dark);
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Ablauf */
+
+.services-process {
+    background: white;
+}
+
+.services-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.services-step {
+    text-align: center;
+}
+
+.services-step span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    background: var(--accent-color);
+    color: var(--bg-dark);
+
+    border-radius: 50%;
+
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+
+.services-step:hover span {
+    transform: scale(1.15);
+}
+
+.services-step h3 {
+    margin-bottom: 15px;
+    color: var(--bg-dark);
+}
+
+.services-step p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Ablauf Pfeile */
+
+.services-arrow {
+    display: none;
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+
+
+/* Geeignet */
+
+.services-suitable {
+    background: #fdf8f3;
+}
+
+.services-suitable p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #555;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.services-suitable ul {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+
+/* CTA */
+
+.services-cta {
+    background: var(--bg-dark);
+    text-align: center;
+}
+
+.services-cta h2 {
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+/* CTA Button */
+
+.services-cta .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: var(--accent-color);
+    color: var(--bg-dark);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.services-cta .btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(.95);
+}
+
+
+/* Animation */
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Desktop */
+
+@media (min-width:1024px) {
+
+    .services-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .services-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services-steps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .services-step {
+        max-width: 250px;
+    }
+
+    .services-arrow {
+        display: block;
+    }
+
+}
+
+
+============================================================
+DATEI: js/header.js
+============================================================
+
+function initHeader() {
+    const navigation = document.querySelector(".navigation");
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    menuToggle.addEventListener("click", () => {
+        navigation.classList.toggle("is-active");
+    });
+
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll(".navigation a").forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (window.location.pathname.endsWith(linkPage)) {
+        link.classList.add("active");
+    }
+
+    console.log(window.location.pathname);
+    console.log(currentPage);
+});
+}
+
+
+============================================================
+DATEI: js/faq.js
+============================================================
+
+function initFAQ() {
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+
+        const button = item.querySelector(".faq-question");
+
+        if (!button) return;
+
+        button.addEventListener("click", () => {
+
+            const isOpen = item.classList.contains("is-open");
+
+            faqItems.forEach(faq => {
+
+                faq.classList.remove("is-open");
+
+                const faqButton = faq.querySelector(".faq-question");
+
+                if (faqButton) {
+                    faqButton.setAttribute("aria-expanded", "false");
+                }
+
+            });
+
+
+            if (!isOpen) {
+
+                item.classList.add("is-open");
+
+                button.setAttribute("aria-expanded", "true");
+
+            }
+
+        });
+
+    });
+
+}
+
+
+============================================================
+DATEI: js/load-components.js
+============================================================
+
+fetch("components/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML("afterbegin", data);
+
+        if (typeof initHeader === "function") {
+            initHeader();
+        }
+    });
+
+
+fetch("components/footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML("beforeend", data);
+    });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (typeof initFAQ === "function" && document.querySelector(".faq-item")) {
+        initFAQ();
+    }
+
+});
+

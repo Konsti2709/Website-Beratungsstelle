@@ -1,13 +1,25 @@
 :root {
-    --bg-dark: #2A2421;
-    --text-light: #FFFFFF;
-    --accent-color: #D4B295;
+    --color-primary: #D4B295;
+    --color-dark: #2A2421;
+
+    --color-background: #FDFBF9;
+    --color-surface: #FFFFFF;
+
+    --color-text: #333333;
+    --color-text-light: #FFFFFF;
+    --color-text-muted: #666666;
+
+    --color-border: #DDDDDD;
+    --color-primary-soft: rgba(212,178,149,.08);
+
     --font-main: "Nunito Sans", Arial, sans-serif;
 
-    --radius: 10px;
-    --shadow: 0 8px 20px rgba(0, 0, 0, .15);
-    --transition: .3s ease;
     --container-width: 1200px;
+
+    --radius: 10px;
+    --shadow: 0 8px 20px rgba(0,0,0,.15);
+
+    --transition: .3s ease;
 }
 
 * {
@@ -18,11 +30,16 @@
 
 body {
     font-family: var(--font-main);
-    background: #FDFBF9;
-    color: #333;
+    background: var(--color-background);
+    color: var(--color-text);
 }
 
 @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
     to {
         opacity: 1;
         transform: translateY(0);

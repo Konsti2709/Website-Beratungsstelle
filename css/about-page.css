@@ -1,8 +1,6 @@
-/* Hero */
-
 .about-hero {
     padding: 90px 20px;
-    background: linear-gradient(135deg, #fdf8f3, #f4e7db);
+    background: linear-gradient(135deg,var(--color-background),#F4E7DB);
     text-align: center;
 }
 
@@ -16,20 +14,17 @@
 
 .about-hero h1 {
     margin-bottom: 20px;
-    color: var(--bg-dark);
+    color: var(--color-dark);
     font-size: 2.3rem;
 }
 
 .about-hero p {
-    color: #555;
+    color: var(--color-text-muted);
     line-height: 1.7;
 }
 
-
-/* Allgemein */
-
 .about-container {
-    max-width: 1200px;
+    max-width: var(--container-width);
     margin: 0 auto;
 }
 
@@ -46,11 +41,8 @@
 .about-container h2 {
     margin-bottom: 30px;
     text-align: center;
-    color: var(--bg-dark);
+    color: var(--color-dark);
 }
-
-
-/* Vorstellung */
 
 .about-grid {
     display: flex;
@@ -68,15 +60,12 @@
 .about-text p,
 .about-school p {
     margin-bottom: 20px;
-    color: #555;
+    color: var(--color-text-muted);
     line-height: 1.7;
 }
 
-
-/* Beratungsansatz */
-
 .about-values {
-    background: #fdf8f3;
+    background: var(--color-background);
 }
 
 .about-cards {
@@ -87,7 +76,7 @@
 
 .about-card {
     padding: 30px 25px;
-    background: white;
+    background: var(--color-surface);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -99,23 +88,17 @@
 
 .about-card h3 {
     margin-bottom: 15px;
-    color: var(--bg-dark);
+    color: var(--color-dark);
 }
 
 .about-card p {
-    color: #555;
+    color: var(--color-text-muted);
     line-height: 1.6;
 }
 
-
-/* Schulberatung */
-
 .about-school {
-    background: white;
+    background: var(--color-surface);
 }
-
-
-/* Qualifikationen */
 
 .qualification-grid {
     display: grid;
@@ -125,13 +108,13 @@
 
 .qualification-grid > div {
     padding: 30px;
-    background: #fdf8f3;
+    background: var(--color-background);
     border-radius: var(--radius);
 }
 
 .qualification-grid h3 {
     margin-bottom: 20px;
-    color: var(--bg-dark);
+    color: var(--color-dark);
 }
 
 .qualification-grid ul {
@@ -140,41 +123,35 @@
 
 .qualification-grid li {
     margin-bottom: 10px;
-    color: #555;
+    color: var(--color-text-muted);
 }
 
-
-/* Zitat */
-
 .about-quote {
-    background: #fdf8f3;
+    background: var(--color-background);
     text-align: center;
 }
 
 .about-quote blockquote {
     max-width: 850px;
     margin: 0 auto 25px;
-    color: var(--bg-dark);
+    color: var(--color-dark);
     font-size: 1.5rem;
     font-style: italic;
     line-height: 1.6;
 }
 
 .about-quote p {
-    color: #555;
+    color: var(--color-text-muted);
 }
 
-
-/* CTA */
-
 .about-cta {
-    background: var(--bg-dark);
+    background: var(--color-dark);
     text-align: center;
 }
 
 .about-cta h2 {
     margin-bottom: 30px;
-    color: var(--text-light);
+    color: var(--color-text-light);
 }
 
 .about-cta .btn {
@@ -187,8 +164,8 @@
 }
 
 .about-cta .btn-primary {
-    background: var(--accent-color);
-    color: var(--bg-dark);
+    background: var(--color-primary);
+    color: var(--color-dark);
 }
 
 .about-cta .btn-primary:hover {
@@ -196,45 +173,30 @@
     filter: brightness(.95);
 }
 
-
-/* Animation */
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* Desktop */
-
 @media (min-width:1024px) {
-
     .about-hero h1 {
         font-size: 3.5rem;
     }
 
     .about-grid {
         display: grid;
-        grid-template-columns: 40% 60%;
-        align-items: center;
+        grid-template-columns:40% 60%;
+        align-items:center;
     }
 
     .about-cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:repeat(3,1fr);
     }
 
     .about-target .about-cards {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns:repeat(4,1fr);
     }
 
     .qualification-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:repeat(3,1fr);
     }
 
     .about-quote blockquote {
-        font-size: 2rem;
+        font-size:2rem;
     }
-
 }
