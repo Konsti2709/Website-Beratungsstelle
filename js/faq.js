@@ -6,16 +6,22 @@ function initFAQ() {
 
         const button = item.querySelector(".faq-question");
 
+        if (!button) return;
+
         button.addEventListener("click", () => {
 
             const isOpen = item.classList.contains("is-open");
 
-
             faqItems.forEach(faq => {
+
                 faq.classList.remove("is-open");
 
-                faq.querySelector(".faq-question")
-                    .setAttribute("aria-expanded", "false");
+                const faqButton = faq.querySelector(".faq-question");
+
+                if (faqButton) {
+                    faqButton.setAttribute("aria-expanded", "false");
+                }
+
             });
 
 
