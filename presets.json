@@ -1,0 +1,52 @@
+{
+    "All": [
+        "components\\footer.html",
+        "components\\header.html",
+        "css\\about-page.css",
+        "css\\about.css",
+        "css\\contact.css",
+        "css\\faq-page.css",
+        "css\\faq.css",
+        "css\\footer.css",
+        "css\\global.css",
+        "css\\header.css",
+        "css\\hero.css",
+        "css\\process.css",
+        "css\\services-page.css",
+        "css\\services.css",
+        "js\\faq.js",
+        "js\\header.js",
+        "js\\load-components.js",
+        ".gitattributes",
+        "about.html",
+        "contact.html",
+        "faq.html",
+        "index.html",
+        "presets.json",
+        "PROJECT_RULES.md",
+        "README.md",
+        "services.html",
+        "website_export.md"
+    ],
+    "css only": [
+        "css\\about-page.css",
+        "css\\about.css",
+        "css\\contact.css",
+        "css\\faq-page.css",
+        "css\\faq.css",
+        "css\\footer.css",
+        "css\\global.css",
+        "css\\header.css",
+        "css\\hero.css",
+        "css\\process.css",
+        "css\\services-page.css",
+        "css\\services.css"
+    ],
+    "html only": [
+        "about.html",
+        "contact.html",
+        "faq.html",
+        "index.html",
+        "services.html"
+    ]
+}
