@@ -48,7 +48,7 @@ DATEI: about.html
 
                 <div class="about-image">
 
-                    <img src="images/portrait.jpg" alt="Portrait">
+                    <img src="https://placehold.co/600x800?text=Portrait" alt="Portrait">
 
                 </div>
 
@@ -245,7 +245,7 @@ DATEI: about.html
 
                 <div class="about-school-image">
 
-                    <img src="images/beratung.jpg" alt="Beratung">
+                    <img src="https://placehold.co/800x600?text=Beratung" alt="Beratung">
 
                 </div>
 
@@ -919,6 +919,7 @@ DATEI: index.html
 
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <title>Aufwind Beratung</title>
 
@@ -936,539 +937,313 @@ DATEI: index.html
 
 <body>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Gemeinsam neue Perspektiven entwickeln.</h1>
+<section class="hero">
 
-            <p>
-                Willkommen bei Aufwind Beratung. Ich unterstütze Sie und Ihre Familie
-                dabei, neue Perspektiven zu entwickeln und Herausforderungen
-                erfolgreich zu meistern – persönlich in Wiesbaden oder online.
-            </p>
+    <div class="hero-content">
 
-            <div class="hero-buttons">
-                <a href="contact.html" class="btn btn-primary">Termin vereinbaren</a>
-                <a href="services.html" class="btn btn-secondary">Mehr erfahren</a>
-            </div>
-        </div>
-    </section>
+        <h1 data-text="index_Hero_title"></h1>
 
+        <p data-text="index_Hero_text"></p>
 
-    <section class="services-section">
+        <div class="hero-buttons">
 
-        <div class="services-container">
+            <a href="contact.html" class="btn btn-primary" data-text="index_Hero_button1"></a>
 
-            <h2>Gemeinsam neue Wege entdecken</h2>
-
-            <p class="services-intro">
-                Jeder Mensch steht vor individuellen Herausforderungen.
-                Gemeinsam entwickeln wir neue Perspektiven und finden Wege,
-                die zu Ihrer persönlichen Situation passen.
-            </p>
-
-
-            <div class="services-grid">
-
-
-                <article class="service-card">
-
-                    <img src="images/angebot-familie.jpg" 
-                        alt="Familienberatung">
-
-                    <div class="service-content">
-
-                        <h3>Familienberatung</h3>
-
-                        <p>
-                            Unterstützung bei schulischen Herausforderungen
-                            und familiären Belastungen. Gemeinsam betrachten
-                            wir Zusammenhänge und entwickeln neue Möglichkeiten.
-                        </p>
-
-                        <a href="services.html" class="btn btn-primary">
-                            Mehr erfahren
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-
-                <article class="service-card">
-
-                    <img src="images/angebot-frauen.jpg" 
-                        alt="Beratung für Frauen">
-
-                    <div class="service-content">
-
-                        <h3>Beratung für Frauen</h3>
-
-                        <p>
-                            Unterstützung bei persönlichen Herausforderungen
-                            und der Entwicklung neuer Lebensperspektiven.
-                        </p>
-
-                        <a href="services.html" class="btn btn-primary">
-                            Mehr erfahren
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-
-                <article class="service-card">
-
-                    <img src="images/angebot-online.jpg" 
-                        alt="Online-Beratung">
-
-                    <div class="service-content">
-
-                        <h3>Online-Beratung</h3>
-
-                        <p>
-                            Flexible Beratung von zu Hause aus –
-                            einfach, vertraulich und ortsunabhängig.
-                        </p>
-
-                        <a href="services.html" class="btn btn-primary">
-                            Mehr erfahren
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
+            <a href="services.html" class="btn btn-secondary" data-text="index_Hero_button2"></a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section class="about-section">
+<section class="services-section">
 
-        <div class="about-container">
+    <div class="services-container">
 
-            <div class="about-content">
+        <h2 data-text="index_Leistungen_title"></h2>
 
-                <h2>Über Aufwind Beratung</h2>
+        <p class="services-intro" data-text="index_Leistungen_intro"></p>
 
-                <p>
-                    Willkommen bei Aufwind Beratung. Mein Name ist [Name] und ich
-                    begleite Kinder, Jugendliche und Erwachsene sowie Familien dabei,
-                    neue Perspektiven zu entwickeln und eigene Wege zu finden.
-                </p>
-
-                <p>
-                    Mir ist wichtig, einen vertrauensvollen und wertschätzenden Raum
-                    zu schaffen, in dem Sie sich wohlfühlen und Ihre Themen in Ihrem
-                    eigenen Tempo betrachten können. Gemeinsam entdecken wir Ressourcen,
-                    lösen Blockaden und entwickeln neue Möglichkeiten für nachhaltige
-                    Veränderungen.
-                </p>
-
-                <a href="about.html" class="btn btn-primary">
-                    Mehr über mich
-                </a>
-
-            </div>
+        <div class="services-grid">
 
 
-            <div class="about-image">
+            <article class="service-card">
 
-                <img src="images/about.jpg" 
-                    alt="Aufwind Beratung">
+                <img src="https://placehold.co/800x500?text=Familienberatung"
+                    alt="Familienberatung">
 
-            </div>
+                <div class="service-content">
+
+                    <h3 data-text="index_Leistung_1_title"></h3>
+
+                    <p data-text="index_Leistung_1_text"></p>
+
+                    <a href="services.html" class="btn btn-primary" data-text="index_Leistung_1_button"></a>
+
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <img src="https://placehold.co/800x500?text=Beratung+Frauen"
+                    alt="Beratung für Frauen">
+
+                <div class="service-content">
+
+                    <h3 data-text="index_Leistung_2_title"></h3>
+
+                    <p data-text="index_Leistung_2_text"></p>
+
+                    <a href="services.html" class="btn btn-primary" data-text="index_Leistung_2_button"></a>
+
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <img src="https://placehold.co/800x500?text=Online+Beratung"
+                    alt="Online-Beratung">
+
+                <div class="service-content">
+
+                    <h3 data-text="index_Leistung_3_title"></h3>
+
+                    <p data-text="index_Leistung_3_text"></p>
+
+                    <a href="services.html" class="btn btn-primary" data-text="index_Leistung_3_button"></a>
+
+                </div>
+
+            </article>
+
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section class="process-section">
+<section class="about-section">
 
-        <div class="process-container">
+    <div class="about-container">
 
-            <h2>So läuft eine Beratung ab</h2>
+        <div class="about-content">
 
-            <p class="process-intro">
-                Der erste Schritt ist oft der schwerste. Ich begleite Sie Schritt
-                für Schritt – vom ersten Kennenlernen bis zur Entwicklung neuer
-                Perspektiven.
-            </p>
+            <h2 data-text="index_Ueber_mich_title"></h2>
 
-            <div class="process-grid">
+            <p data-text="index_Ueber_mich_text1"></p>
 
-                <article class="process-step">
-                    <div class="step-number">1</div>
+            <p data-text="index_Ueber_mich_text2"></p>
 
-                    <h3>Erstkontakt</h3>
-
-                    <p>
-                        Kurzes Kennenlernen und Terminvereinbarung.
-                    </p>
-                </article>
-
-
-                <article class="process-step">
-                    <div class="step-number">2</div>
-
-                    <h3>Persönliches Gespräch</h3>
-
-                    <p>
-                        Gemeinsam besprechen wir Ihre Situation, Wünsche und Ziele.
-                    </p>
-                </article>
-
-
-                <article class="process-step">
-                    <div class="step-number">3</div>
-
-                    <h3>Gemeinsame Lösungen</h3>
-
-                    <p>
-                        Gemeinsam entwickeln wir neue Perspektiven und individuelle
-                        Handlungsmöglichkeiten.
-                    </p>
-                </article>
-
-
-                <article class="process-step">
-                    <div class="step-number">4</div>
-
-                    <h3>Nachhaltige Begleitung</h3>
-
-                    <p>
-                        Ich begleite Sie dabei, neue Wege Schritt für Schritt in
-                        Ihren Alltag zu integrieren.
-                    </p>
-                </article>
-
-            </div>
-
-            <p class="process-ending">
-                Ich freue mich darauf, Sie auf Ihrem Weg zu begleiten.
-            </p>
-
-            <a href="contact.html" class="btn btn-primary">
-                Jetzt Termin vereinbaren
-            </a>
+            <a href="about.html" class="btn btn-primary" data-text="index_Ueber_mich_button"></a>
 
         </div>
 
-    </section>
 
+        <div class="about-image">
 
-    <section class="faq-section">
-
-        <div class="faq-container">
-
-            <h2>Häufige Fragen</h2>
-
-            <p class="faq-intro">
-                Hier finden Sie Antworten auf Fragen, die mir häufig gestellt werden.
-            </p>
-
-            <div class="faq">
-
-                <div class="faq-item">
-
-                    <button class="faq-question" aria-expanded="false">
-                        Wie läuft eine Beratung ab?
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>
-                            Nach einem ersten Kennenlernen besprechen wir Ihre Anliegen und Ziele.
-                            Gemeinsam entwickeln wir passende Lösungsansätze und arbeiten Schritt
-                            für Schritt an den Themen, die Ihnen wichtig sind.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" aria-expanded="false">
-                        Wie lange dauert eine Sitzung?
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>
-                            Eine Beratung dauert in der Regel etwa 60 Minuten.
-                            Die genaue Dauer kann je nach Anliegen individuell vereinbart werden.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" aria-expanded="false">
-                        Wo findet die Beratung statt?
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>
-                            Die Beratung findet persönlich in Wiesbaden oder bequem online statt –
-                            ganz so, wie es am besten zu Ihrer Situation passt.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" aria-expanded="false">
-                        Was kostet eine Beratung?
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>
-                            Alle Informationen zu den Kosten finden Sie auf der Seite
-                            „Kosten & Terminbuchung“. Gerne beantworte ich Ihre Fragen auch persönlich.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" aria-expanded="false">
-                        Werden meine Gespräche vertraulich behandelt?
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>
-                            Ja. Vertraulichkeit ist eine wichtige Grundlage meiner Arbeit.
-                            Alle Gespräche werden selbstverständlich vertraulich behandelt.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" aria-expanded="false">
-                        Wie kann ich einen Termin vereinbaren?
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>
-                            Sie können mich ganz einfach per E-Mail oder telefonisch kontaktieren
-                            oder über die Terminseite eine Anfrage stellen.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-cta">
-
-                <h3>Ich freue mich darauf, Sie kennenzulernen.</h3>
-
-                <p>
-                    Haben Sie noch Fragen oder möchten einen Termin vereinbaren?
-                    Ich freue mich auf Ihre Nachricht.
-                </p>
-
-                <a href="contact.html" class="btn btn-primary">
-                    Termin vereinbaren
-                </a>
-
-            </div>
+            <img src="https://placehold.co/800x600?text=Aufwind+Beratung"
+                alt="Aufwind Beratung">
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <script src="js/header.js"></script>
-    <script src="js/faq.js"></script>
-    <script src="js/load-components.js"></script>
+<section class="process-section">
+
+    <div class="process-container">
+
+        <h2 data-text="index_Ablauf_title"></h2>
+
+        <p class="process-intro" data-text="index_Ablauf_intro"></p>
+
+
+        <div class="process-grid">
+
+
+            <article class="process-step">
+
+                <div class="step-number">1</div>
+
+                <h3 data-text="index_Schritt_1_title"></h3>
+
+                <p data-text="index_Schritt_1_text"></p>
+
+            </article>
+
+
+            <article class="process-step">
+
+                <div class="step-number">2</div>
+
+                <h3 data-text="index_Schritt_2_title"></h3>
+
+                <p data-text="index_Schritt_2_text"></p>
+
+            </article>
+
+
+            <article class="process-step">
+
+                <div class="step-number">3</div>
+
+                <h3 data-text="index_Schritt_3_title"></h3>
+
+                <p data-text="index_Schritt_3_text"></p>
+
+            </article>
+
+
+            <article class="process-step">
+
+                <div class="step-number">4</div>
+
+                <h3 data-text="index_Schritt_4_title"></h3>
+
+                <p data-text="index_Schritt_4_text"></p>
+
+            </article>
+
+
+        </div>
+
+
+        <p class="process-ending" data-text="index_Ablauf_ending"></p>
+
+        <a href="contact.html" class="btn btn-primary" data-text="index_Ablauf_button"></a>
+
+
+    </div>
+
+</section>
+
+
+<section class="faq-section">
+
+    <div class="faq-container">
+
+        <h2 data-text="index_FAQ_title"></h2>
+
+        <p class="faq-intro" data-text="index_FAQ_intro"></p>
+
+
+        <div class="faq">
+
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false" data-text="index_FAQ_1_question"></button>
+
+                <div class="faq-answer">
+
+                    <p data-text="index_FAQ_1_answer"></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false" data-text="index_FAQ_2_question"></button>
+
+                <div class="faq-answer">
+
+                    <p data-text="index_FAQ_2_answer"></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false" data-text="index_FAQ_3_question"></button>
+
+                <div class="faq-answer">
+
+                    <p data-text="index_FAQ_3_answer"></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false" data-text="index_FAQ_4_question"></button>
+
+                <div class="faq-answer">
+
+                    <p data-text="index_FAQ_4_answer"></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false" data-text="index_FAQ_5_question"></button>
+
+                <div class="faq-answer">
+
+                    <p data-text="index_FAQ_5_answer"></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false" data-text="index_FAQ_6_question"></button>
+
+                <div class="faq-answer">
+
+                    <p data-text="index_FAQ_6_answer"></p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="faq-cta">
+
+            <h3 data-text="index_FAQ_CTA_title"></h3>
+
+            <p data-text="index_FAQ_CTA_text"></p>
+
+            <a href="contact.html" class="btn btn-primary" data-text="index_FAQ_CTA_button"></a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<script src="js/header.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/load-components.js"></script>
+<script src="js/content-loader.js"></script>
 
 </body>
 </html>
-
-
-============================================================
-DATEI: PROJECT_RULES.md
-============================================================
-
-# PROJECT RULES
-
-## Projektstruktur
-
-* Die bestehende Ordnerstruktur beibehalten.
-* Dateien nur erstellen, wenn eine bestehende Datei nicht sinnvoll erweitert werden kann.
-* HTML-Dateien bleiben im Hauptordner.
-* Wiederverwendbare Bestandteile kommen in `components/`.
-* CSS-Dateien bleiben nach Bereichen getrennt:
-
-  * `global.css` für globale Einstellungen und Variablen
-  * einzelne CSS-Dateien für einzelne Seiten oder Komponenten
-* JavaScript-Dateien nach Funktion trennen.
-
-## Allgemeine Code-Regeln
-
-* Der Code soll sauber, verständlich und einfach wartbar sein.
-* Keine unnötigen Änderungen an bestehendem Code machen.
-* Vor Änderungen immer prüfen, ob bereits vorhandener Code genutzt werden kann.
-* Keine komplizierten Lösungen verwenden, wenn eine einfache Lösung möglich ist.
-* Klassen und Variablen sinnvoll benennen.
-* Keine unnötigen Kommentare hinzufügen.
-* Bestehenden Stil des Projekts beibehalten.
-
-## HTML-Regeln
-
-* Einheitliche Einrückung verwenden.
-* Semantische HTML-Elemente verwenden, wenn möglich:
-
-  * `section`
-  * `article`
-  * `main`
-  * `header`
-  * `footer`
-* Wiederholende Elemente sauber strukturieren.
-* Klassen beschreiben den Inhalt und nicht das Aussehen.
-* Keine Inline-CSS verwenden.
-* Keine unnötigen Wrapper-Divs erstellen.
-
-## CSS-Regeln
-
-* Nach jeder schließenden Klammer `}` immer eine Leerzeile einfügen.
-
-Beispiel:
-
-```css
-.card {
-    padding:20px;
-    background:white;
-}
-
-.button {
-    color:black;
-}
-```
-
-* Keine unnötigen Leerzeilen innerhalb einer CSS-Regel.
-* CSS kompakt und übersichtlich schreiben.
-* Einrückung immer mit 4 Leerzeichen.
-* Eigenschaften nach Möglichkeit logisch gruppieren:
-
-  1. Layout
-  2. Größe/Abstände
-  3. Farben
-  4. Schrift
-  5. Animationen/Transitions
-
-Beispiel:
-
-```css
-.card {
-    display:flex;
-    padding:20px;
-
-    background:var(--color-background);
-    color:var(--color-dark);
-
-    transition:var(--transition);
-}
-```
-
-* Globale Farben, Abstände und Werte aus `global.css` verwenden.
-* Keine festen Werte verwenden, wenn bereits eine CSS-Variable existiert.
-* Responsive Design berücksichtigen.
-* Mobile-Version zuerst schreiben.
-* Desktop-Anpassungen in `@media(min-width:1024px)` ergänzen.
-
-## Design-Regeln
-
-* Das bestehende Design beibehalten.
-* Farben aus den CSS-Variablen verwenden.
-* Einheitliche Abstände nutzen.
-* Einheitliche Border-Radius- und Schatten-Werte nutzen.
-* Keine neuen Design-Stile einführen, die nicht zum Projekt passen.
-* Animationen sparsam einsetzen.
-* Webseiten sollen professionell, ruhig und übersichtlich wirken.
-
-## Responsive Design
-
-* Jede Seite muss auf Mobile und Desktop funktionieren.
-* Mobile Layouts dürfen nicht kaputtgehen.
-* Bei Desktop-Versionen prüfen:
-
-  * Sind Inhalte zentriert?
-  * Sind Container begrenzt?
-  * Sind Karten richtig angeordnet?
-* Keine Elemente nur für eine Bildschirmgröße bauen.
-
-## JavaScript-Regeln
-
-* Funktionen klar benennen.
-* Keine unnötigen globalen Variablen erstellen.
-* Bestehenden Code nicht komplett ersetzen, wenn eine kleine Änderung reicht.
-* Vor dem Ändern prüfen, ob andere Dateien davon abhängig sind.
-* Komponenten erst laden, bevor Funktionen ausgeführt werden, die diese benötigen.
-
-## Komponenten
-
-* Wiederverwendbare Elemente als Komponenten speichern.
-* Header und Footer nicht mehrfach kopieren.
-* Änderungen an Komponenten müssen auf allen Seiten funktionieren.
-* Nach Änderungen prüfen, ob alle Seiten weiterhin funktionieren.
-
-## Fehlerbehebung
-
-Bei Problemen zuerst prüfen:
-
-1. Wird die Datei überhaupt geladen?
-2. Ist der Pfad korrekt?
-3. Gibt es Tippfehler bei Klassen oder IDs?
-4. Wird CSS von einer anderen Regel überschrieben?
-5. Funktioniert die Struktur auf Mobile und Desktop?
-
-Nicht direkt Code umbauen, bevor die Ursache gefunden wurde.
-
-## Änderungen durch KI
-
-Wenn Code geändert wird:
-
-* Nur die benötigten Stellen ändern.
-* Keine komplette Datei neu schreiben, wenn nicht notwendig.
-* Bestehende Funktionen und Strukturen respektieren.
-* Vor größeren Änderungen erklären, was geändert wird.
-* Bei vollständigem Code immer die komplette Datei ausgeben.
-
-## Dateiformatierung
-
-* Markdown-Dateien übersichtlich mit Leerzeilen schreiben.
-* CSS nach jedem `}` eine Leerzeile.
-* HTML und JavaScript sauber einrücken.
-* Keine unnötigen Leerzeichen am Zeilenende.
-
-## Ziel des Projekts
-
-Die Website soll:
-
-* professionell wirken
-* einfach erweiterbar sein
-* auf allen Geräten funktionieren
-* übersichtlich aufgebaut sein
-* einen einheitlichen Design-Stil besitzen
-
 
 
 ============================================================
@@ -1477,8 +1252,9 @@ DATEI: services.html
 
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <title>Aufwind Beratung</title>
+    <title>Beratungsangebote | Aufwind Beratung</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -1517,7 +1293,7 @@ DATEI: services.html
         <div class="services-container">
 
             <h2>
-                Meine Beratungsangebote
+                Mein professionelles Hilfsangebot
             </h2>
 
 
@@ -1526,19 +1302,24 @@ DATEI: services.html
 
                 <article class="service-card">
 
-                    <div class="service-icon">
-                        🌱
+                    <img src="https://placehold.co/800x500?text=Beratung+Frauen"
+                        alt="Beratung für Frauen">
+
+
+                    <div class="service-content">
+
+                        <h3>
+                            Beratung für Frauen
+                        </h3>
+
+                        <p>
+                            Begleitung bei persönlichen Herausforderungen,
+                            Veränderungen und belastenden Lebensphasen.
+                            Gemeinsam entwickeln wir neue Perspektiven und
+                            Möglichkeiten für Ihren weiteren Weg.
+                        </p>
+
                     </div>
-
-                    <h3>
-                        Psychologische Beratung
-                    </h3>
-
-                    <p>
-                        Unterstützung bei persönlichen Krisen,
-                        belastenden Lebensphasen, Überforderung,
-                        Stress und wichtigen Entscheidungen.
-                    </p>
 
                 </article>
 
@@ -1546,19 +1327,24 @@ DATEI: services.html
 
                 <article class="service-card">
 
-                    <div class="service-icon">
-                        🔎
+                    <img src="https://placehold.co/800x500?text=Familienberatung"
+                        alt="Familienberatung">
+
+
+                    <div class="service-content">
+
+                        <h3>
+                            Familienberatung
+                        </h3>
+
+                        <p>
+                            Unterstützung bei familiären Veränderungen,
+                            Konflikten und Herausforderungen im Alltag.
+                            Gemeinsam betrachten wir Zusammenhänge und
+                            finden passende Lösungen.
+                        </p>
+
                     </div>
-
-                    <h3>
-                        Systemische Beratung
-                    </h3>
-
-                    <p>
-                        Gemeinsam betrachten wir Zusammenhänge,
-                        Beziehungen und Ressourcen, um neue
-                        Perspektiven und Lösungen zu entwickeln.
-                    </p>
 
                 </article>
 
@@ -1566,19 +1352,23 @@ DATEI: services.html
 
                 <article class="service-card">
 
-                    <div class="service-icon">
-                        🤝
+                    <img src="https://placehold.co/800x500?text=Schulberatung"
+                        alt="Schulberatung">
+
+
+                    <div class="service-content">
+
+                        <h3>
+                            Schulberatung
+                        </h3>
+
+                        <p>
+                            Beratung für Familien bei Lernproblemen,
+                            Motivationsschwierigkeiten, Konflikten,
+                            Übergängen und Schulwechsel.
+                        </p>
+
                     </div>
-
-                    <h3>
-                        Familienberatung
-                    </h3>
-
-                    <p>
-                        Unterstützung bei familiären Konflikten,
-                        Veränderungen und Herausforderungen
-                        im Zusammenleben.
-                    </p>
 
                 </article>
 
@@ -1586,24 +1376,182 @@ DATEI: services.html
 
                 <article class="service-card">
 
-                    <div class="service-icon">
-                        📚
+                    <img src="https://placehold.co/800x500?text=Allgemeine+Fragen"
+                        alt="Allgemeine Beratung">
+
+
+                    <div class="service-content">
+
+                        <h3>
+                            Allgemeine Fragen
+                        </h3>
+
+                        <p>
+                            Sie sind sich unsicher, welches Angebot
+                            zu Ihrer Situation passt?
+                            Kontaktieren Sie mich gerne für ein erstes Gespräch.
+                        </p>
+
                     </div>
-
-                    <h3>
-                        Schulische Herausforderungen
-                    </h3>
-
-                    <p>
-                        Beratung für Familien bei Lernproblemen,
-                        Motivation, Konflikten und schwierigen
-                        Übergängen im Schulalltag.
-                    </p>
 
                 </article>
 
 
             </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="services-approach">
+
+        <div class="services-container">
+
+            <h2>
+                Mein Beratungsansatz
+            </h2>
+
+
+            <div class="services-cards">
+
+
+                <article class="service-card">
+
+                    <img src="https://placehold.co/800x500?text=Psychologische+Beratung"
+                        alt="Psychologische Beratung">
+
+
+                    <div class="service-content">
+
+                        <h3>
+                            Psychologische Beratung
+                        </h3>
+
+                        <p>
+                            Wir betrachten persönliche Belastungen,
+                            Gefühle und Herausforderungen.
+                            Gemeinsam entwickeln wir neue Sichtweisen
+                            und Handlungsmöglichkeiten.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <img src="https://placehold.co/800x500?text=Systemische+Beratung"
+                        alt="Systemische Beratung">
+
+
+                    <div class="service-content">
+
+                        <h3>
+                            Systemische Beratung
+                        </h3>
+
+                        <p>
+                            Der Blick richtet sich auf Beziehungen,
+                            Lebenssituationen und vorhandene Ressourcen.
+                            Dadurch können neue Perspektiven entstehen.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="services-form">
+
+        <div class="services-container">
+
+            <h2>
+                Beratungsformen
+            </h2>
+
+
+            <div class="services-cards">
+
+
+                <article class="service-card">
+
+                    <img src="https://placehold.co/800x500?text=Vor+Ort"
+                        alt="Beratung vor Ort">
+
+
+                    <div class="service-content">
+
+                        <h3>
+                            Vor Ort
+                        </h3>
+
+                        <p>
+                            Persönliche Gespräche in einer ruhigen
+                            und geschützten Atmosphäre.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <img src="https://placehold.co/800x500?text=Online+Beratung"
+                        alt="Online-Beratung">
+
+
+                    <div class="service-content">
+
+                        <h3>
+                            Online-Beratung
+                        </h3>
+
+                        <p>
+                            Flexible Beratung von zu Hause aus –
+                            vertraulich und ortsunabhängig.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="services-cost">
+
+        <div class="services-container">
+
+            <h2>
+                Kosten
+            </h2>
+
+
+            <p>
+                Informationen zu den Kosten und möglichen
+                Beratungszeiten erhalten Sie gerne persönlich.
+                Sprechen Sie mich einfach an.
+            </p>
 
         </div>
 
@@ -1622,81 +1570,64 @@ DATEI: services.html
 
             <div class="services-steps">
 
+
                 <div class="services-step">
-                    <span>1</span>
-                    <h3>Kontakt aufnehmen</h3>
+
+                    <span>
+                        1
+                    </span>
+
+                    <h3>
+                        Kontakt aufnehmen
+                    </h3>
+
                     <p>
                         Sie schildern Ihr Anliegen und wir
                         vereinbaren ein erstes Gespräch.
                     </p>
+
                 </div>
 
+
+
                 <div class="services-step">
-                    <span>2</span>
-                    <h3>Erstgespräch</h3>
+
+                    <span>
+                        2
+                    </span>
+
+                    <h3>
+                        Erstgespräch
+                    </h3>
+
                     <p>
                         Gemeinsam schauen wir auf Ihre Situation
                         und mögliche nächste Schritte.
                     </p>
+
                 </div>
 
+
+
                 <div class="services-step">
-                    <span>3</span>
-                    <h3>Gemeinsam weitergehen</h3>
+
+                    <span>
+                        3
+                    </span>
+
+                    <h3>
+                        Gemeinsam weitergehen
+                    </h3>
+
                     <p>
                         Wir entwickeln Lösungen, die zu Ihnen
                         und Ihrer Lebenssituation passen.
                     </p>
+
                 </div>
 
+
             </div>
-            
-        </div>
-
-    </section>
-
-
-
-    <section class="services-suitable">
-
-        <div class="services-container">
-
-            <h2>
-                Für wen ist die Beratung geeignet?
-            </h2>
-
-
-            <p>
-                Die Beratung richtet sich an Menschen,
-                die sich Unterstützung wünschen, neue
-                Perspektiven suchen oder schwierige
-                Situationen besser verstehen möchten.
-            </p>
-
-
-            <ul>
-
-                <li>
-                    Persönliche Krisen und Veränderungen
-                </li>
-
-                <li>
-                    Überforderung und anhaltender Stress
-                </li>
-
-                <li>
-                    Familien- und Beziehungskonflikte
-                </li>
-
-                <li>
-                    Schulische Herausforderungen
-                </li>
-
-                <li>
-                    Entscheidungen und neue Lebenswege
-                </li>
-
-            </ul>
 
         </div>
 
