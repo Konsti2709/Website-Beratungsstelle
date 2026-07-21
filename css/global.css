@@ -34,6 +34,30 @@ body {
     color: var(--color-text);
 }
 
+.btn {
+    display:inline-block;
+    padding:14px 28px;
+    border:none;
+    border-radius:var(--radius);
+    font-family:inherit;
+    font-size:1rem;
+    font-weight:600;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.btn-primary {
+    background:var(--color-primary);
+    color:var(--color-dark);
+}
+
+.btn-primary:hover {
+    transform:translateY(-2px);
+    filter:brightness(.95);
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;
