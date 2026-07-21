@@ -1,0 +1,37 @@
+.success {
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,var(--color-background),#F4E7DB);
+}
+
+.success-card {
+    max-width:700px;
+    padding:50px 40px;
+    background:#fff;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    text-align:center;
+}
+
+.success-icon {
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.success h1 {
+    margin-bottom:20px;
+    color:var(--color-dark);
+}
+
+.success p {
+    margin-bottom:18px;
+    line-height:1.7;
+    color:var(--color-text-muted);
+}
+
+.success .btn {
+    margin-top:20px;
+}
