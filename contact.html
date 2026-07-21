@@ -78,12 +78,51 @@
         <p class="contact-intro" data-text="contact_Formular_intro"></p>
 
         <form
+            class="contact-form"
             name="kontakt"
             method="POST"
-            data-netlify="true">
+            data-netlify="true"
+            netlify-honeypot="bot-field">
 
-            <input type="hidden" name="form-name" value="kontakt">
-            
+            <p hidden>
+                <label>
+                    Nicht ausfüllen:
+                    <input name="bot-field">
+                </label>
+            </p>
+
+            <label for="name" data-text="contact_Formular_label_name"></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" data-text="contact_Formular_label_email"></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="topic" data-text="contact_Formular_label_topic"></label>
+            <select id="topic" name="topic">
+                <option data-text="contact_Formular_option_1"></option>
+                <option data-text="contact_Formular_option_2"></option>
+                <option data-text="contact_Formular_option_3"></option>
+                <option data-text="contact_Formular_option_4"></option>
+            </select>
+
+            <label for="contact-type" data-text="contact_Formular_label_contact_type"></label>
+            <select id="contact-type" name="contact-type">
+                <option data-text="contact_Formular_option_email"></option>
+                <option data-text="contact_Formular_option_phone"></option>
+            </select>
+
+            <label for="message" data-text="contact_Formular_label_message"></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <p class="privacy-note" data-text="contact_Formular_privacy"></p>
+
+            <button type="submit" class="btn btn-primary contact-submit" data-text="contact_Formular_button"></button>
+
+        </form>
+
+
+        <form class="contact-form">
+
             <label for="name" data-text="contact_Formular_label_name"></label>
             <input type="text" id="name" name="name" required>
 
