@@ -1,169 +1,411 @@
 
 ============================================================
-DATEI: PROJECT_RULES.md
+DATEI: css\contact.css
 ============================================================
 
-# PROJECT RULES
-
-## Projektstruktur
-
-* Die bestehende Ordnerstruktur beibehalten.
-* Dateien nur erstellen, wenn eine bestehende Datei nicht sinnvoll erweitert werden kann.
-* HTML-Dateien bleiben im Hauptordner.
-* Wiederverwendbare Bestandteile kommen in `components/`.
-* CSS-Dateien bleiben nach Bereichen getrennt:
-
-  * `global.css` für globale Einstellungen und Variablen
-  * einzelne CSS-Dateien für einzelne Seiten oder Komponenten
-* JavaScript-Dateien nach Funktion trennen.
-
-## Allgemeine Code-Regeln
-
-* Der Code soll sauber, verständlich und einfach wartbar sein.
-* Keine unnötigen Änderungen an bestehendem Code machen.
-* Vor Änderungen immer prüfen, ob bereits vorhandener Code genutzt werden kann.
-* Keine komplizierten Lösungen verwenden, wenn eine einfache Lösung möglich ist.
-* Klassen und Variablen sinnvoll benennen.
-* Keine unnötigen Kommentare hinzufügen.
-* Bestehenden Stil des Projekts beibehalten.
-
-## HTML-Regeln
-
-* Einheitliche Einrückung verwenden.
-* Semantische HTML-Elemente verwenden, wenn möglich:
-
-  * `section`
-  * `article`
-  * `main`
-  * `header`
-  * `footer`
-* Wiederholende Elemente sauber strukturieren.
-* Klassen beschreiben den Inhalt und nicht das Aussehen.
-* Keine Inline-CSS verwenden.
-* Keine unnötigen Wrapper-Divs erstellen.
-
-## CSS-Regeln
-
-* Nach jeder schließenden Klammer `}` immer eine Leerzeile einfügen.
-
-Beispiel:
-
-```css
-.card {
-    padding:20px;
-    background:white;
+.contact-hero {
+    padding:90px 20px;
+    background:linear-gradient(135deg,var(--color-background),#F4E7DB);
+    text-align:center;
 }
 
-.button {
-    color:black;
+.contact-hero-content {
+    max-width:800px;
+    margin:0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp .8s ease forwards;
 }
-```
 
-* Keine unnötigen Leerzeilen innerhalb einer CSS-Regel.
-* CSS kompakt und übersichtlich schreiben.
-* Einrückung immer mit 4 Leerzeichen.
-* Eigenschaften nach Möglichkeit logisch gruppieren:
-
-  1. Layout
-  2. Größe/Abstände
-  3. Farben
-  4. Schrift
-  5. Animationen/Transitions
-
-Beispiel:
-
-```css
-.card {
-    display:flex;
-    padding:20px;
-
-    background:var(--color-background);
+.contact-hero h1 {
+    margin-bottom:20px;
     color:var(--color-dark);
+    font-size:2.2rem;
+}
 
+.contact-hero p {
+    color:var(--color-text-muted);
+    line-height:1.7;
+}
+
+.contact-container {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.contact-options,
+.contact-process,
+.contact-form-section {
+    padding:80px 20px;
+}
+
+.contact-options h2,
+.contact-process h2,
+.contact-form-section h2 {
+    margin-bottom:30px;
+    text-align:center;
+    color:var(--color-dark);
+}
+
+.contact-cards {
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.contact-card {
+    padding:35px 25px;
+    background:var(--color-background);
+    text-align:center;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
     transition:var(--transition);
 }
-```
 
-* Globale Farben, Abstände und Werte aus `global.css` verwenden.
-* Keine festen Werte verwenden, wenn bereits eine CSS-Variable existiert.
-* Responsive Design berücksichtigen.
-* Mobile-Version zuerst schreiben.
-* Desktop-Anpassungen in `@media(min-width:1024px)` ergänzen.
+.contact-card:hover {
+    transform:translateY(-5px);
+}
 
-## Design-Regeln
+.contact-icon {
+    margin-bottom:15px;
+    font-size:2rem;
+}
 
-* Das bestehende Design beibehalten.
-* Farben aus den CSS-Variablen verwenden.
-* Einheitliche Abstände nutzen.
-* Einheitliche Border-Radius- und Schatten-Werte nutzen.
-* Keine neuen Design-Stile einführen, die nicht zum Projekt passen.
-* Animationen sparsam einsetzen.
-* Webseiten sollen professionell, ruhig und übersichtlich wirken.
+.contact-card h3 {
+    margin-bottom:15px;
+    color:var(--color-dark);
+}
 
-## Responsive Design
+.contact-card p {
+    line-height:1.6;
+}
 
-* Jede Seite muss auf Mobile und Desktop funktionieren.
-* Mobile Layouts dürfen nicht kaputtgehen.
-* Bei Desktop-Versionen prüfen:
+.contact-card a:not(.btn) {
+    color:var(--color-dark);
+}
 
-  * Sind Inhalte zentriert?
-  * Sind Container begrenzt?
-  * Sind Karten richtig angeordnet?
-* Keine Elemente nur für eine Bildschirmgröße bauen.
+.contact-small {
+    opacity:.8;
+    font-size:.9rem;
+}
 
-## JavaScript-Regeln
+.contact-process {
+    background:var(--color-surface);
+}
 
-* Funktionen klar benennen.
-* Keine unnötigen globalen Variablen erstellen.
-* Bestehenden Code nicht komplett ersetzen, wenn eine kleine Änderung reicht.
-* Vor dem Ändern prüfen, ob andere Dateien davon abhängig sind.
-* Komponenten erst laden, bevor Funktionen ausgeführt werden, die diese benötigen.
+.contact-steps {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:45px;
+}
 
-## Komponenten
+.contact-step {
+    position:relative;
+    text-align:center;
+}
 
-* Wiederverwendbare Elemente als Komponenten speichern.
-* Header und Footer nicht mehrfach kopieren.
-* Änderungen an Komponenten müssen auf allen Seiten funktionieren.
-* Nach Änderungen prüfen, ob alle Seiten weiterhin funktionieren.
+.contact-step span {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:60px;
+    height:60px;
+    margin:0 auto 20px;
+    background:var(--color-primary);
+    color:var(--color-dark);
+    border-radius:50%;
+    font-size:1.3rem;
+    font-weight:700;
+    transition:var(--transition);
+}
 
-## Fehlerbehebung
+.contact-step:hover span {
+    transform:scale(1.15);
+}
 
-Bei Problemen zuerst prüfen:
+.contact-step:not(:last-child)::after {
+    content:"↓";
+    display:block;
+    margin-top:35px;
+    font-size:1.5rem;
+    color:var(--color-primary);
+}
 
-1. Wird die Datei überhaupt geladen?
-2. Ist der Pfad korrekt?
-3. Gibt es Tippfehler bei Klassen oder IDs?
-4. Wird CSS von einer anderen Regel überschrieben?
-5. Funktioniert die Struktur auf Mobile und Desktop?
+.contact-step p {
+    max-width:250px;
+    margin:0 auto;
+    line-height:1.6;
+    color:var(--color-text-muted);
+}
 
-Nicht direkt Code umbauen, bevor die Ursache gefunden wurde.
+.contact-form-section {
+    background:var(--color-background);
+}
 
-## Änderungen durch KI
+.contact-form-container {
+    max-width:600px;
+    margin:0 auto;
+}
 
-Wenn Code geändert wird:
+.contact-intro {
+    margin-bottom:35px;
+    color:var(--color-text-muted);
+    text-align:center;
+}
 
-* Nur die benötigten Stellen ändern.
-* Keine komplette Datei neu schreiben, wenn nicht notwendig.
-* Bestehende Funktionen und Strukturen respektieren.
-* Vor größeren Änderungen erklären, was geändert wird.
-* Bei vollständigem Code immer die komplette Datei ausgeben.
-* Am Ende immer die vollständige Datei zurückgeben
+.contact-form {
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
 
-## Dateiformatierung
+.contact-form label {
+    margin-top:10px;
+    color:var(--color-dark);
+    font-weight:600;
+}
 
-* Markdown-Dateien übersichtlich mit Leerzeilen schreiben.
-* CSS nach jedem `}` eine Leerzeile.
-* HTML und JavaScript sauber einrücken.
-* Keine unnötigen Leerzeichen am Zeilenende.
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width:100%;
+    padding:14px 16px;
+    border:1px solid rgba(42,36,33,.15);
+    border-radius:var(--radius);
+    background:#fff;
+    color:var(--color-dark);
+    font-family:inherit;
+    font-size:1rem;
+    transition:var(--transition);
+}
 
-## Ziel des Projekts
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    outline:none;
+    border-color:var(--color-primary);
+    box-shadow:0 0 0 3px rgba(212,178,149,.25);
+}
 
-Die Website soll:
+.contact-form textarea {
+    min-height:140px;
+    resize:vertical;
+}
 
-* professionell wirken
-* einfach erweiterbar sein
-* auf allen Geräten funktionieren
-* übersichtlich aufgebaut sein
-* einen einheitlichen Design-Stil besitzen
+.contact-submit {
+    align-self:center;
+    padding:14px 28px;
+    background:var(--color-primary);
+    color:var(--color-dark);
+    border-radius:var(--radius);
+    border:none;
+    font-family:inherit;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:var(--transition);
+}
 
+.contact-submit:hover {
+    transform:translateY(-2px);
+    filter:brightness(.95);
+}
+
+.privacy-note {
+    margin:25px 0;
+    padding:15px;
+    background:var(--color-primary-soft);
+    border-radius:var(--radius);
+    color:var(--color-dark);
+    text-align:center;
+    line-height:1.5;
+}
+
+.faq-link {
+    margin-top:50px;
+    text-align:center;
+}
+
+.faq-link p {
+    margin-bottom:10px;
+    color:var(--color-dark);
+}
+
+.faq-link a {
+    color:var(--color-dark);
+    font-weight:600;
+    text-decoration:none;
+    border-bottom:2px solid var(--color-primary);
+}
+
+.faq-link a:hover {
+    color:var(--color-primary);
+}
+
+@media(min-width:1024px) {
+
+    .contact-hero h1 {
+        font-size:3.5rem;
+    }
+
+    .contact-cards {
+        flex-direction:row;
+    }
+
+    .contact-card {
+        flex:1;
+    }
+
+    .contact-steps {
+        grid-template-columns:repeat(3,1fr);
+        gap:30px;
+    }
+
+    .contact-step {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contact-step:not(:last-child)::after {
+        content:"→";
+        position:absolute;
+        top:30px;
+        right:-18px;
+        margin:0;
+        font-size:1.5rem;
+        color:var(--color-primary);
+    }
+
+}
+
+
+============================================================
+DATEI: contact.html
+============================================================
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Aufwind Beratung</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body data-page="contact">
+<main>
+<section class="contact-hero">
+    <div class="contact-hero-content">
+        <h1 data-text="contact_Hero_title"></h1>
+        <p data-text="contact_Hero_text"></p>
+    </div>
+</section>
+
+<section class="contact-options">
+    <div class="contact-container">
+        <h2 data-text="contact_Kontaktmöglichkeiten_title"></h2>
+        <div class="contact-cards">
+
+            <article class="contact-card">
+                <div class="contact-icon">✉</div>
+                <h3 data-text="contact_Kontakt_1_title"></h3>
+                <p data-text="contact_Kontakt_1_text"></p>
+                <a href="mailto:kontakt@aufwind-beratung.de" class="btn btn-primary" data-text="contact_Kontakt_1_button"></a>
+            </article>
+
+            <article class="contact-card">
+                <div class="contact-icon">☎</div>
+                <h3 data-text="contact_Kontakt_2_title"></h3>
+                <p data-text="contact_Kontakt_2_text"></p>
+                <p class="contact-small" data-text="contact_Kontakt_2_zeit"></p>
+            </article>
+
+            <article class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3 data-text="contact_Kontakt_3_title"></h3>
+                <p data-text="contact_Kontakt_3_text"></p>
+                <p class="contact-small" data-text="contact_Kontakt_3_untertitel"></p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact-process">
+    <div class="contact-container">
+        <h2 data-text="contact_Ablauf_title"></h2>
+        <div class="contact-steps">
+
+            <div class="contact-step">
+                <span>1</span>
+                <p data-text="contact_Schritt_1_title"></p>
+            </div>
+
+            <div class="contact-step">
+                <span>2</span>
+                <p data-text="contact_Schritt_2_title"></p>
+            </div>
+
+            <div class="contact-step">
+                <span>3</span>
+                <p data-text="contact_Schritt_3_title"></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact-form-section">
+    <div class="contact-form-container">
+
+        <h2 data-text="contact_Formular_title"></h2>
+        <p class="contact-intro" data-text="contact_Formular_intro"></p>
+
+        <form class="contact-form">
+
+            <label for="name" data-text="contact_Formular_label_name"></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" data-text="contact_Formular_label_email"></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="topic" data-text="contact_Formular_label_topic"></label>
+            <select id="topic" name="topic">
+                <option data-text="contact_Formular_option_1"></option>
+                <option data-text="contact_Formular_option_2"></option>
+                <option data-text="contact_Formular_option_3"></option>
+                <option data-text="contact_Formular_option_4"></option>
+            </select>
+
+            <label for="contact-type" data-text="contact_Formular_label_contact_type"></label>
+            <select id="contact-type" name="contact-type">
+                <option data-text="contact_Formular_option_email"></option>
+                <option data-text="contact_Formular_option_phone"></option>
+            </select>
+
+            <label for="message" data-text="contact_Formular_label_message"></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <p class="privacy-note" data-text="contact_Formular_privacy"></p>
+
+            <button type="submit" class="btn btn-primary contact-submit" data-text="contact_Formular_button"></button>
+
+        </form>
+
+        <div class="faq-link">
+            <p data-text="contact_FAQ_Link_text"></p>
+            <a href="faq.html" data-text="contact_FAQ_Link_link"></a>
+        </div>
+
+    </div>
+</section>
+</main>
+
+<script src="js/header.js"></script>
+<script src="js/load-components.js"></script>
+<script src="js/content-loader.js"></script>
+</body>
+</html>
 
