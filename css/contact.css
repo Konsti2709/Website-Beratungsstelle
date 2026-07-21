@@ -75,8 +75,8 @@
     line-height:1.6;
 }
 
-.contact-card a:not(.btn) {
-    color:var(--color-dark);
+.contact-card a {
+    margin-top: 20px;
 }
 
 .contact-small {
