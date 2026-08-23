@@ -1,4 +1,5 @@
 import { supabase } from "./supabase.js";
+import { icons } from "./icons.js";
 
 import {
   initBookingData,
@@ -263,10 +264,10 @@ async function loadServices() {
     infoDiv.className = "service-info";
 
     const durationSpan = document.createElement("span");
-    durationSpan.textContent = `⏱ ${service.duration} Minuten`;
+    durationSpan.innerHTML = `${icons.clock3}<span>${service.duration} Minuten</span>`;
 
     const priceSpan = document.createElement("span");
-    priceSpan.textContent = `💶 ${service.price} €`;
+    priceSpan.innerHTML = `${icons.euro}<span>${service.price} €</span>`;
 
     infoDiv.append(durationSpan, priceSpan);
 

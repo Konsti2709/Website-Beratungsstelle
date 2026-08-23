@@ -20,9 +20,7 @@
     <main>
       <section class="success">
         <div class="success-card">
-          <div class="success-icon" data-text="success_Hero_icon">
-            ✅
-          </div>
+          <div class="success-icon" data-icon="circleCheck" aria-hidden="true"></div>
 
           <h1 data-text="success_Hero_title">
             Termin erfolgreich gebucht
@@ -54,7 +52,7 @@
           </div>
 
           <p class="success-note" id="success-note">
-            <span class="success-note-icon" aria-hidden="true">✉</span>
+            <span class="success-note-icon" data-icon="mail" aria-hidden="true"></span>
             <span data-text="success_Bestätigung_note">Sie erhalten in Kürze eine Bestätigung per E-Mail.</span>
           </p>
 
@@ -72,6 +70,7 @@
     <script src="js/load-components.js"></script>
     <script src="js/header.js"></script>
     <script src="js/content-loader.js"></script>
+    <script type="module" src="js/public-icons.js"></script>
 
     <script>
       // Parse query params und fülle die Erfolgseite

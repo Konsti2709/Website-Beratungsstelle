@@ -22,6 +22,17 @@
   margin-bottom: 20px;
 }
 
+.success-icon svg {
+  width: 64px;
+  height: 64px;
+  color: var(--color-primary);
+}
+
+.success-note-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
 .success h1 {
   margin-bottom: 20px;
   color: var(--color-dark);

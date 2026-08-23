@@ -257,6 +257,22 @@
   font-weight: 600;
 }
 
+.service-info > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.service-info > span > span {
+  padding: 0;
+}
+
+.service-info svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+}
+
 
 /* ========================================
    SCHRITT 2 – KALENDER

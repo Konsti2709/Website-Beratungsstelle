@@ -1,4 +1,5 @@
 import { supabase } from "../../js/supabase.js";
+import { icons } from "../../js/icons.js";
 
 /* ========================================
    ELEMENTE
@@ -1116,6 +1117,7 @@ function renderEntries() {
                   entry.id
                 )}"
               >
+                ${icons.edit}
                 Bearbeiten
               </button>
 
@@ -1127,6 +1129,7 @@ function renderEntries() {
                   entry.id
                 )}"
               >
+                ${icons.trash}
                 Löschen
               </button>
 
@@ -1175,6 +1178,7 @@ function renderEntries() {
                 entry.id
               )}"
             >
+              ${icons.edit}
               Bearbeiten
             </button>
 
@@ -1186,6 +1190,7 @@ function renderEntries() {
                 entry.id
               )}"
             >
+              ${icons.trash}
               Löschen
             </button>
 

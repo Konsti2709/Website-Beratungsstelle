@@ -1,4 +1,5 @@
 import { supabase } from "../../js/supabase.js";
+import { icons } from "../../js/icons.js";
 
 /* ========================================
    ELEMENTE
@@ -599,6 +600,7 @@ function renderBookingCard(booking) {
           data-action="view"
           data-id="${escapeHtml(booking.id)}"
         >
+          ${icons.eye}
           Anzeigen
         </button>
 
@@ -1047,7 +1049,8 @@ function openBookingModal(bookingId) {
               booking.id
             )}"
           >
-            Buchung löschen
+              ${icons.trash}
+              Buchung löschen
           </button>
 
         </div>

@@ -35,7 +35,7 @@
               <div class="contact-info-grid">
                 <div class="contact-cards">
                   <article class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">✉</div>
+                    <div class="contact-icon" data-icon="mail" aria-hidden="true"></div>
                     <div>
                       <h3 data-text="contact_Kontakt_1_title">E-Mail</h3>
                       <p data-text="contact_Kontakt_1_text">beratung.aufwind@gmail.com</p>
@@ -43,7 +43,7 @@
                   </article>
 
                   <article class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">☎</div>
+                    <div class="contact-icon" data-icon="phone" aria-hidden="true"></div>
                     <div>
                       <h3 data-text="contact_Kontakt_2_title">Telefon</h3>
                       <p data-text="contact_Kontakt_2_text">0176 31027082</p>
@@ -52,7 +52,7 @@
                   </article>
 
                   <article class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">📍</div>
+                    <div class="contact-icon" data-icon="mapPin" aria-hidden="true"></div>
                     <div>
                       <h3 data-text="contact_Kontakt_3_title">Ort &amp; Erreichbarkeit</h3>
                       <p data-text="contact_Kontakt_3_text">Wiesbaden</p>
@@ -97,14 +97,14 @@
                   <label for="message" data-text="contact_Formular_label_message">Nachricht</label>
                   <textarea id="message" name="message" rows="5" required></textarea>
 
-                  <p class="privacy-note" data-text="contact_Formular_privacy">🔒 Ihre Anfrage wird selbstverständlich vertraulich behandelt.</p>
+                  <p class="privacy-note"><span class="privacy-icon" data-icon="shieldCheck" aria-hidden="true"></span><span data-text="contact_Formular_privacy">Ihre Anfrage wird selbstverständlich vertraulich behandelt.</span></p>
 
                   <button type="submit" class="btn btn-primary contact-submit">Nachricht senden</button>
                 </form>
 
                 <div class="booking-link">
                   <p>Sie möchten direkt einen festen Termin vereinbaren?</p>
-                  <a href="booking.html">Hier Termin buchen →</a>
+                  <a href="booking.html">Hier Termin buchen <span data-icon="arrowRight" aria-hidden="true"></span></a>
                 </div>
               </div>
             </div>
@@ -117,5 +117,6 @@
     <script src="js/load-components.js"></script>
     <script src="js/header.js"></script>
     <script src="js/content-loader.js"></script>
+    <script type="module" src="js/public-icons.js"></script>
   </body>
 </html>

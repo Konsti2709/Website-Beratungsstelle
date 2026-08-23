@@ -1,4 +1,5 @@
 import { supabase } from "./supabase.js";
+import { icons } from "./icons.js";
 
 async function loadServices() {
   const { data, error } = await supabase
@@ -63,8 +64,8 @@ async function loadServices() {
           <p class="service-description">${service.description ?? ""}</p>
 
           <div class="service-info">
-            <span>⏱ ${service.duration} Minuten</span>
-            <span>💶 ${service.price} €</span>
+            <span class="service-meta-item">${icons.clock3}<span>${service.duration} Minuten</span></span>
+            <span class="service-meta-item">${icons.euro}<span>${service.price} €</span></span>
           </div>
 
           <a

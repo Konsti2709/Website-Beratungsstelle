@@ -1,3 +1,13 @@
+.service-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.service-meta-item svg {
+  width: 17px;
+  height: 17px;
+}
 /* ========================================
    SERVICES PAGE – HERO
    ======================================== */

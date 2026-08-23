@@ -483,6 +483,10 @@
 }
 
 .booking-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
   min-height: 36px;
 
   padding: 8px 13px;

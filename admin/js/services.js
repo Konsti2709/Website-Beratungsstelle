@@ -1,4 +1,5 @@
 import { supabase } from "../../js/supabase.js";
+import { icons } from "../../js/icons.js";
 
 /* ========================================
    ELEMENTE
@@ -428,17 +429,21 @@ function renderServices() {
 
               <div class="service-card-info">
 
-                <span>
-                  ⏱
+                <span class="service-meta-item">
+                  ${icons.clock3}
+                  <span>
                   ${escapeHtml(service.duration)}
                   Minuten
+                  </span>
                 </span>
 
-                <span>
-                  €
+                <span class="service-meta-item">
+                  ${icons.euro}
+                  <span>
                   ${escapeHtml(
                     formatCurrency(service.price)
                   )}
+                  </span>
                 </span>
 
               </div>
@@ -451,6 +456,7 @@ function renderServices() {
                   data-action="edit"
                   data-id="${escapeHtml(service.id)}"
                 >
+                  ${icons.edit}
                   Bearbeiten
                 </button>
 

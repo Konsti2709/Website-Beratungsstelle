@@ -44,6 +44,16 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
+button [data-icon],
+button > svg,
+[data-icon] > svg {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  vertical-align: middle;
+}
+
 
 /* ========================================
    ADMIN LAYOUT

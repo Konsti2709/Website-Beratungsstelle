@@ -271,6 +271,12 @@
   gap: 5px;
 }
 
+.service-card-info svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+}
+
 .service-card-footer {
   display: flex;
   justify-content: flex-end;
@@ -330,6 +336,10 @@
    ======================================== */
 
 .service-edit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
   min-height: 36px;
 
   padding: 8px 12px;
