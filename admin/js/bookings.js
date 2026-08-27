@@ -1261,56 +1261,17 @@ async function handleBookingAction(
 
 
 async function rescheduleBooking(booking) {
-  const currentDate = booking.booking_date || "";
-  const currentTime = booking.booking_time
-    ? booking.booking_time.slice(0, 5)
-    : "09:00";
+  const appointment = await openRescheduleModal(booking);
 
-  const nextDate = window.prompt(
-    "Neues Datum im Format YYYY-MM-DD:",
-    currentDate
-  );
-
-  if (nextDate === null) {
-    return;
-  }
-
-  const trimmedDate = nextDate.trim();
-
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(trimmedDate)) {
-    alert("Bitte ein gültiges Datum im Format YYYY-MM-DD eingeben.");
-    return;
-  }
-
-  const nextTime = window.prompt(
-    "Neue Uhrzeit im Format HH:MM:",
-    currentTime
-  );
-
-  if (nextTime === null) {
-    return;
-  }
-
-  const trimmedTime = nextTime.trim();
-
-  if (!/^\d{2}:\d{2}$/.test(trimmedTime)) {
-    alert("Bitte eine gültige Uhrzeit im Format HH:MM eingeben.");
-    return;
-  }
-
-  const confirmed = confirm(
-    `Möchtest du den Termin wirklich auf ${trimmedDate} um ${trimmedTime} Uhr verschieben?`
-  );
-
-  if (!confirmed) {
+  if (!appointment) {
     return;
   }
 
   const { error } = await supabase
     .from("bookings")
     .update({
-      booking_date: trimmedDate,
-      booking_time: trimmedTime,
+      booking_date: appointment.date,
+      booking_time: appointment.time,
       status: booking.status,
     })
     .eq("id", booking.id);
@@ -1325,6 +1286,8 @@ async function rescheduleBooking(booking) {
     return;
   }
 
+  alert("Der Termin wurde erfolgreich geändert.");
+
   await triggerBookingEmail(
     booking.id,
     "booking_rescheduled"
@@ -1333,6 +1296,132 @@ async function rescheduleBooking(booking) {
   closeBookingModal();
 
   await loadBookings();
+}
+
+
+function openRescheduleModal(booking) {
+  const currentDate = booking.booking_date || "";
+  const currentTime = booking.booking_time
+    ? booking.booking_time.slice(0, 5)
+    : "09:00";
+  const modal = document.createElement("div");
+
+  modal.className = "booking-modal";
+  modal.innerHTML = `
+    <div class="booking-modal-backdrop" data-reschedule-close></div>
+
+    <div
+      class="booking-modal-dialog booking-reschedule-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="reschedule-modal-title"
+    >
+      <div class="booking-modal-header">
+        <div>
+          <h2 id="reschedule-modal-title">Termin ändern</h2>
+          <p>${escapeHtml(booking.customer_name)} · ${escapeHtml(getServiceTitle(booking))}</p>
+        </div>
+
+        <button
+          type="button"
+          class="booking-modal-close"
+          data-reschedule-close
+          aria-label="Fenster schließen"
+        >
+          ×
+        </button>
+      </div>
+
+      <form class="booking-reschedule-form">
+        <p class="booking-reschedule-current">
+          Bisheriger Termin: <strong>${escapeHtml(formatDate(currentDate))}, ${escapeHtml(formatTime(currentTime))} Uhr</strong>
+        </p>
+
+        <div class="booking-reschedule-fields">
+          <label>
+            Neues Datum
+            <input
+              type="date"
+              name="date"
+              value="${escapeHtml(currentDate)}"
+              min="${escapeHtml(getLocalDateString())}"
+              required
+            />
+          </label>
+
+          <label>
+            Neue Uhrzeit
+            <input
+              type="time"
+              name="time"
+              value="${escapeHtml(currentTime)}"
+              step="900"
+              required
+            />
+          </label>
+        </div>
+
+        <div class="booking-reschedule-actions">
+          <button type="button" class="booking-modal-action" data-reschedule-close>
+            Abbrechen
+          </button>
+          <button type="submit" class="booking-modal-action booking-modal-confirm">
+            Termin speichern
+          </button>
+        </div>
+      </form>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+  document.body.classList.add("booking-modal-open");
+
+  const form = modal.querySelector("form");
+  const dateInput = form.querySelector('[name="date"]');
+  const timeInput = form.querySelector('[name="time"]');
+
+  return new Promise((resolve) => {
+    const finish = (value) => {
+      document.removeEventListener("keydown", handleEscape);
+      modal.remove();
+
+      const detailsModal = document.getElementById("booking-details-modal");
+
+      if (!detailsModal || detailsModal.hidden) {
+        document.body.classList.remove("booking-modal-open");
+      }
+
+      resolve(value);
+    };
+
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        finish(null);
+      }
+    };
+
+    modal.addEventListener("click", (event) => {
+      if (event.target.closest("[data-reschedule-close]")) {
+        finish(null);
+      }
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      finish({
+        date: dateInput.value,
+        time: timeInput.value,
+      });
+    });
+
+    document.addEventListener("keydown", handleEscape);
+    dateInput.focus();
+  });
 }
 
 

@@ -760,6 +760,73 @@
 }
 
 
+.booking-reschedule-dialog {
+  width: min(560px, 100%);
+}
+
+.booking-reschedule-form {
+  padding: 26px;
+}
+
+.booking-reschedule-current {
+  margin: 0 0 24px;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.booking-reschedule-current strong {
+  color: var(--color-dark);
+}
+
+.booking-reschedule-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.booking-reschedule-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: var(--color-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.booking-reschedule-fields input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+
+  border: 1px solid var(--admin-border);
+  border-radius: var(--radius);
+
+  background: var(--color-surface);
+  color: var(--color-dark);
+
+  font: inherit;
+  font-weight: 400;
+}
+
+.booking-reschedule-fields input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 178, 149, 0.15);
+}
+
+.booking-reschedule-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  margin-top: 28px;
+}
+
+
 /* ========================================
    MODAL AKTIONEN
    ======================================== */
@@ -1066,6 +1133,15 @@ body.booking-modal-open {
 
   .booking-modal-content {
     padding: 20px;
+  }
+
+  .booking-reschedule-form {
+    padding: 20px;
+  }
+
+  .booking-reschedule-fields,
+  .booking-reschedule-actions {
+    grid-template-columns: 1fr;
   }
 
   .booking-details-grid {
