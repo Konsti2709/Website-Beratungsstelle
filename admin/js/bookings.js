@@ -349,6 +349,12 @@ function getDateRange() {
   today.setHours(0, 0, 0, 0);
 
   switch (selected) {
+    case "upcoming":
+      return {
+        from: getLocalDateString(today),
+        to: null,
+      };
+
     case "today":
       return {
         from: getLocalDateString(today),
@@ -655,6 +661,10 @@ function renderActiveFilters() {
     let label = "";
 
     switch (selectedDate) {
+      case "upcoming":
+        label = "Zeitraum: Bevorstehend";
+        break;
+
       case "today":
         label = "Zeitraum: Heute";
         break;
@@ -1074,6 +1084,15 @@ function renderModalActions(booking) {
       return `
         <button
           type="button"
+          class="booking-modal-action"
+          data-action="reschedule"
+          data-id="${escapeHtml(booking.id)}"
+        >
+          Termin ändern
+        </button>
+
+        <button
+          type="button"
           class="booking-modal-action booking-modal-confirm"
           data-action="confirm"
           data-id="${escapeHtml(booking.id)}"
@@ -1292,7 +1311,7 @@ async function rescheduleBooking(booking) {
     .update({
       booking_date: trimmedDate,
       booking_time: trimmedTime,
-      status: "confirmed",
+      status: booking.status,
     })
     .eq("id", booking.id);
 
