@@ -921,6 +921,38 @@ async function confirmBooking() {
 
 
     // --------------------------------------------------
+    // 6. E-Mail-Benachrichtigungen auslösen
+    // --------------------------------------------------
+
+    try {
+      const { data: emailResult, error: emailError } =
+        await supabase.functions.invoke("send-booking-email", {
+          body: {
+            bookingId,
+            event: "new_booking",
+          },
+        });
+
+      if (emailError) {
+        console.error(
+          "Fehler beim E-Mail-Versand:",
+          emailError,
+        );
+      } else {
+        console.log(
+          "E-Mail-Benachrichtigungen erfolgreich ausgelöst:",
+          emailResult,
+        );
+      }
+    } catch (error) {
+      console.error(
+        "Unerwarteter Fehler beim E-Mail-Versand:",
+        error,
+      );
+    }
+
+
+    // --------------------------------------------------
     // 6. Erfolgreiche Buchung
     // --------------------------------------------------
 

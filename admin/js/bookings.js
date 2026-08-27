@@ -1235,11 +1235,85 @@ async function handleBookingAction(
 
 
     case "reschedule":
-      alert(
-        "Die Funktion zum Verschieben des Termins wird im nächsten Schritt eingebaut."
-      );
+      await rescheduleBooking(booking);
       break;
   }
+}
+
+
+async function rescheduleBooking(booking) {
+  const currentDate = booking.booking_date || "";
+  const currentTime = booking.booking_time
+    ? booking.booking_time.slice(0, 5)
+    : "09:00";
+
+  const nextDate = window.prompt(
+    "Neues Datum im Format YYYY-MM-DD:",
+    currentDate
+  );
+
+  if (nextDate === null) {
+    return;
+  }
+
+  const trimmedDate = nextDate.trim();
+
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(trimmedDate)) {
+    alert("Bitte ein gültiges Datum im Format YYYY-MM-DD eingeben.");
+    return;
+  }
+
+  const nextTime = window.prompt(
+    "Neue Uhrzeit im Format HH:MM:",
+    currentTime
+  );
+
+  if (nextTime === null) {
+    return;
+  }
+
+  const trimmedTime = nextTime.trim();
+
+  if (!/^\d{2}:\d{2}$/.test(trimmedTime)) {
+    alert("Bitte eine gültige Uhrzeit im Format HH:MM eingeben.");
+    return;
+  }
+
+  const confirmed = confirm(
+    `Möchtest du den Termin wirklich auf ${trimmedDate} um ${trimmedTime} Uhr verschieben?`
+  );
+
+  if (!confirmed) {
+    return;
+  }
+
+  const { error } = await supabase
+    .from("bookings")
+    .update({
+      booking_date: trimmedDate,
+      booking_time: trimmedTime,
+      status: "confirmed",
+    })
+    .eq("id", booking.id);
+
+  if (error) {
+    console.error(
+      "Termin konnte nicht angepasst werden:",
+      error
+    );
+
+    alert("Der Termin konnte nicht geändert werden.");
+    return;
+  }
+
+  await triggerBookingEmail(
+    booking.id,
+    "booking_rescheduled"
+  );
+
+  closeBookingModal();
+
+  await loadBookings();
 }
 
 
@@ -1261,9 +1335,59 @@ async function changeStatus(
     return;
   }
 
+  if (newStatus === "confirmed") {
+    await triggerBookingEmail(
+      booking.id,
+      "booking_confirmed"
+    );
+  }
+
+  if (newStatus === "cancelled") {
+    await triggerBookingEmail(
+      booking.id,
+      "booking_cancelled"
+    );
+  }
+
   closeBookingModal();
 
   await loadBookings();
+}
+
+
+async function triggerBookingEmail(
+  bookingId,
+  event
+) {
+  try {
+    const { data, error } = await supabase.functions.invoke(
+      "send-booking-email",
+      {
+        body: {
+          bookingId,
+          event,
+        },
+      }
+    );
+
+    if (error) {
+      console.error(
+        `Fehler beim E-Mail-Event ${event}:`,
+        error
+      );
+      return;
+    }
+
+    console.log(
+      `E-Mail-Event ${event} ausgelöst:`,
+      data
+    );
+  } catch (error) {
+    console.error(
+      `Unerwarteter Fehler beim E-Mail-Event ${event}:`,
+      error
+    );
+  }
 }
 
 
