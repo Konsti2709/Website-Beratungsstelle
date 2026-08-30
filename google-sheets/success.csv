@@ -1,7 +1,7 @@
 "Seite","Bereich","Feld","Text"
 "success","Hero","icon","✅"
 "success","Hero","title","Termin erfolgreich gebucht"
-"success","Hero","intro","Vielen Dank — Ihre Buchung wurde gespeichert."
+"success","Hero","intro","Vielen Dank – Ihre Buchung wurde gespeichert. Ich freue mich auf unsere Zusammenarbeit."
 "success","Buchungsdetails_service","label","Leistung:"
 "success","Buchungsdetails_datetime","label","Datum & Uhrzeit:"
 "success","Bestätigung","note","Sie erhalten in Kürze eine Bestätigung per E-Mail."
