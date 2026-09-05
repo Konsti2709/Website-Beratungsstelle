@@ -103,6 +103,22 @@ function formatTime(timeString) {
   return timeString.slice(0, 5);
 }
 
+function getMeetingTypeLabel(notes) {
+  if (typeof notes !== "string") {
+    return "Nicht angegeben";
+  }
+
+  if (notes.includes("Beratungsform: Online")) {
+    return "Online";
+  }
+
+  if (notes.includes("Beratungsform: Vor Ort")) {
+    return "Vor Ort";
+  }
+
+  return "Nicht angegeben";
+}
+
 
 function formatDateTime(dateTimeString) {
   if (!dateTimeString) {
@@ -924,6 +940,9 @@ function openBookingModal(bookingId) {
             ${escapeHtml(
               service?.duration ?? "–"
             )} Minuten
+          </span>
+          <span class="booking-details-secondary">
+            Beratungsform: ${escapeHtml(getMeetingTypeLabel(booking.notes))}
           </span>
 
         </div>

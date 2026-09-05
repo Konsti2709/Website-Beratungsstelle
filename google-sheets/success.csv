@@ -4,5 +4,6 @@
 "success","Hero","intro","Vielen Dank – Ihre Buchung wurde gespeichert. Ich freue mich auf unsere Zusammenarbeit."
 "success","Buchungsdetails_service","label","Leistung:"
 "success","Buchungsdetails_datetime","label","Datum & Uhrzeit:"
+"success","Buchungsdetails_location","label","Beratungsform:"
 "success","Bestätigung","note","Sie erhalten in Kürze eine Bestätigung per E-Mail."
 "success","CTA","button","Zur Startseite"

@@ -994,6 +994,7 @@ async function confirmBooking() {
       service: bookingState.selectedService.title || "",
       date: bookingDate,
       time: bookingTime,
+      meeting_type: bookingState.meetingType,
       created_at: createdAt,
     });
 

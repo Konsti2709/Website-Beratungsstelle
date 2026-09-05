@@ -312,6 +312,18 @@ function getEmailPlan(event: EmailEvent, settings: typeof DEFAULT_SETTINGS) {
   }
 }
 
+function getMeetingTypeLabel(notes: string | null | undefined) {
+  if (notes?.includes("Beratungsform: Online")) {
+    return "Online";
+  }
+
+  if (notes?.includes("Beratungsform: Vor Ort")) {
+    return "Vor Ort";
+  }
+
+  return "Nicht angegeben";
+}
+
 function renderCustomerEmail(
   event: EmailEvent,
   booking: Record<string, any>,
@@ -370,6 +382,7 @@ function renderCustomerEmail(
             <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Preis:</strong> ${formatCurrency(service.price)}</p>
             <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Datum:</strong> ${escapeHtml(formatBookingDate(booking.booking_date))}</p>
             <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Uhrzeit:</strong> ${escapeHtml(formatBookingTime(booking.booking_time))} Uhr</p>
+            <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Beratungsform:</strong> ${escapeHtml(getMeetingTypeLabel(booking.notes))}</p>
           </div>
 
           <p style="margin:0; color:#2a2421; font-size:15px;">Viele Grüße<br><strong>Aufwind Beratung</strong></p>
@@ -416,6 +429,7 @@ function renderOfficeEmail(
             <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Preis:</strong> ${formatCurrency(service.price)}</p>
             <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Datum:</strong> ${escapeHtml(formatBookingDate(booking.booking_date))}</p>
             <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Uhrzeit:</strong> ${escapeHtml(formatBookingTime(booking.booking_time))} Uhr</p>
+            <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Beratungsform:</strong> ${escapeHtml(getMeetingTypeLabel(booking.notes))}</p>
             <p style="margin:4px 0; color:#2a2421; font-size:15px;"><strong>Status:</strong> ${escapeHtml(booking.status)}</p>
           </div>
 
