@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
+
     <link rel="stylesheet" href="css/booking-page.css" />
   </head>
 
@@ -131,6 +132,36 @@
                   </p>
 
                   <div id="time-slots"></div>
+
+                  <fieldset class="booking-location-options">
+                    <legend data-text="booking_Datum_location_title">
+                      Beratungsform
+                    </legend>
+
+                    <label>
+                      <input
+                        type="radio"
+                        name="meetingType"
+                        value="vor_ort"
+                        required
+                      />
+                      <span data-text="booking_Datum_location_in_person">
+                        Vor Ort
+                      </span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="radio"
+                        name="meetingType"
+                        value="online"
+                        required
+                      />
+                      <span data-text="booking_Datum_location_online">
+                        Online
+                      </span>
+                    </label>
+                  </fieldset>
                 </div>
               </div>
             </div>

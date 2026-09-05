@@ -27,6 +27,7 @@ const bookingState = {
   selectedService: null,
   selectedDate: null,
   selectedTime: null,
+  meetingType: null,
   customer: {
     firstName: "",
     lastName: "",
@@ -43,6 +44,12 @@ const bookingFormError = document.getElementById("booking-form-error");
 const bookingSummaryError = document.getElementById("booking-summary-error");
 const bookingConfirmButton = document.getElementById("booking-confirm-button");
 let isBookingSubmitting = false;
+
+document.querySelectorAll('input[name="meetingType"]').forEach((input) => {
+  input.addEventListener("change", () => {
+    bookingState.meetingType = input.value;
+  });
+});
 
 function setBookingSubmitting(isSubmitting) {
   isBookingSubmitting = isSubmitting;
@@ -99,6 +106,11 @@ nextButtons.forEach((button) => {
 
       if (!bookingState.selectedTime) {
         alert("Bitte wählen Sie zuerst eine Uhrzeit aus.");
+        return;
+      }
+
+      if (!bookingState.meetingType) {
+        alert("Bitte wählen Sie aus, ob die Beratung online oder vor Ort stattfindet.");
         return;
       }
 
@@ -482,11 +494,12 @@ function renderBookingSummary() {
   const service = bookingState.selectedService;
   const date = bookingState.selectedDate;
   const time = bookingState.selectedTime;
+  const meetingType = bookingState.meetingType;
   const customer = bookingState.customer;
 
-  if (!service || !date || !time) {
+  if (!service || !date || !time || !meetingType) {
     summaryContainer.innerHTML = `
-      <p class="times-empty">Bitte wählen Sie zuerst eine Beratung, ein Datum und eine Uhrzeit aus.</p>
+      <p class="times-empty">Bitte wählen Sie zuerst eine Beratung, ein Datum, eine Uhrzeit und eine Beratungsform aus.</p>
     `;
     return;
   }
@@ -531,6 +544,11 @@ function renderBookingSummary() {
   dateSection.className = "summary-section";
   appendSummaryRow(dateSection, "Datum", formatDateLabelShort(date));
   appendSummaryRow(dateSection, "Uhrzeit", `${time} Uhr`);
+  appendSummaryRow(
+    dateSection,
+    "Beratungsform",
+    meetingType === "online" ? "Online" : "Vor Ort",
+  );
   summaryCard.appendChild(dateSection);
 
   const customerSection = document.createElement("div");
@@ -784,6 +802,11 @@ async function confirmBooking() {
       return;
     }
 
+      if (!bookingState.meetingType) {
+        showSummaryError("Bitte wählen Sie eine Beratungsform aus.");
+        return;
+      }
+
     collectCustomerFormValues();
 
     if (!validateCustomerForm()) {
@@ -847,6 +870,12 @@ async function confirmBooking() {
     // 5. Buchung über sichere PostgreSQL-Funktion speichern
     // --------------------------------------------------
 
+    const locationNote = bookingState.meetingType === "online"
+      ? "Beratungsform: Online"
+      : "Beratungsform: Vor Ort";
+    const customerNote = bookingState.customer.message || "";
+    const notes = [locationNote, customerNote].filter(Boolean).join("\n\n");
+
     const rpcPromise = supabase.rpc("create_booking", {
       p_service_id: serviceData.id,
       p_customer_name: customerName,
@@ -854,7 +883,7 @@ async function confirmBooking() {
       p_customer_phone: bookingState.customer.phone || null,
       p_booking_date: bookingDate,
       p_booking_time: bookingTime,
-      p_notes: bookingState.customer.message || null,
+      p_notes: notes || null,
     });
 
     const result = await withTimeout(rpcPromise, 10000);
